@@ -1,0 +1,7 @@
+\babel@toc {italian}{}
+\babel@toc {italian}{}
+\contentsline {section}{\numberline {1}Introduzione}{2}% 
+\contentsline {section}{\numberline {2}Raccolta dati}{3}% 
+\contentsline {subsection}{\numberline {2.1}Strumento per la raccolta ed il salvataggio di dati}{3}% 
+\contentsline {subsubsection}{\numberline {2.1.1}Caratteristiche}{3}% 
+\contentsline {subsubsection}{\numberline {2.1.2}Applicazione Android per la rccolta}{3}% 
