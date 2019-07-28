@@ -5,6 +5,8 @@
 \usepackage[italian]{babel}
 \usepackage{frontespizio}
 \usepackage{graphicx}
+\usepackage[bottom=2cm]{geometry}
+
 
 \begin{document}
 	
@@ -32,7 +34,7 @@
 	\clearpage
 
 
-
+% ----- INTRODUZIONE -----
 	\section{Introduzione}
 Lo scopo di questa tesi è analizzare i movimenti compiuti durante il sollevamento di un carico elevato mediante dispositivi indossabili che contengono al loro interno sensori. \\
 L’utilità di questo tipo di analisi diventa evidente quando andiamo a considerare i dati provenienti dagli enti di previdenza sociale relativi al tipo e ai numeri degli infortuni sul lavoro e delle malattie professionali. Questi dati evidenziano infatti come, a livello mondiale, a prevalere siano malattie professionali classificabili come disturbi Muscolo-Scheletrici. \\
@@ -41,12 +43,35 @@ Considerando poi che quasi un terzo dei lavoratori dichiara di svolgere quotidia
 
 	\clearpage
 
-	\section{Movimentazione corretta e scorretta per il sollevamento di un carico}
-L'operazione di sollevamento di un carico...
+% ------ CAPITOLO I: descrizione movimento ------
+	\section{Movimentazione}
+
+	\subsection{Movimento corretto}
+Per evitare infortuni e minimizzare l'indice di rischio il modo corretto per sollevare un carico è piegare le gambe leggermente divaricate e mantenendo un’inclinazione lieve e costante del busto verso il carico, il quale deve essere posizionato alla minore distanza possibile dai piedi (circa 10 cm). L'immagine di seguito illustra i passaggi da seguire per un corretto sollevamento.
+
+\begin{center}
+	\makebox[\linewidth]{}
+	\includegraphics[width=60mm,scale=0.7]{./images/sollevamento_corretto.png} 
+	\makebox[\linewidth]{}
+	\makebox[\linewidth]{}
+\end{center} 
+
+\subsection{Movimento scorretto}
+Un esempio di un modo scorretto di sollevare un carico è invece illustrato nella seguente figura, dove non si utilizzano le gambe, che rimangono stese, per
+aiutarsi nella distribuzione del peso, ma ci si piega con la sola schiena, esponendola di fatto a un alto rischio di disturbi dovuti a sovraccarico biomeccanico. Tale movimento è da evitare in tutti i modi
+
+\begin{center}
+	\makebox[\linewidth]{}
+	\includegraphics[width=60mm,scale=0.7]{./images/sollevamento_scorretto.png} 
+	\makebox[\linewidth]{}
+\end{center} 
+
+
 
 
 	\clearpage
 
+% ----- CAPITOLO II -------
 	\section{Raccolta dati}
 Per poter eseguire uno studio del rischio che corre una persona, sollevando un carico elevato, si affronta una prima fase in cui si raccolgono i dati relativi alla movimentazione di quest'ultima. \\
 Dunque si rende necessario uno strumento che permetta di raccogliere e catalogare informazioni con cui poter ricostruire il movimento ed in una seconda fase eseguire un analisi per poter quantificare il rischio. \\
@@ -66,23 +91,31 @@ Il sistema di cui ci muniremo dovrà contenere al suo interno sensori di vario g
 \end{itemize}
 Inoltre un'altra proprietà che il nostro sistema deve possedere è essere \textbf{miniinvasivo}, infatti la persona che utilizza uno strumento di questo tipo non dovrebbe quasi accorgersi della sua esistenza, affinché non si senta eccessivamente controllato, oppure disturbato nei movimenti che compie.
 
+
+% ----- APPLICAZIONE ANDROID -----
 	\subsubsection{Applicazione Android per la rccolta}
 La soluzione che abbiamo trovato, che rispecchia i requisiti di sopra riportati è un'applicazione Android composta da due moduli, uno che girerà su smartphone e una su smartwatch.
 
-	\subsection{Esperimenti di registraione}
+\makebox[\linewidth]{}
+
+
+% ----- CAPITOLO SUGLI ESPERIMENTI -----
+	\subsection{Esperimenti di registrazione}
 Dopo essersi muniti di uno strumento che rispecchi i requisiti precedentemente elencati, si  affronta una fase in cui si eseguono uno o più esperimenti di registrazione: ogni esperimento è definito da un set di azioni, che dovranno essere svolte da un candidato, mentre il sistema di registrazione e salvataggio dei dati memorizza tutte le informazioni neccessarie a ricostruire la movimentazione compiuta.
 
+% ----- ESPERIMENTO I -----
 	\subsubsection{Esperimento 1}
 Il primo esperimento da svolgere è molto semplice, vengono eseguite essenzialmente 3 azioni: camminata, sollevamento, abbassamento.
 La ultime due azioni possono essere fatte in maniera sicura oppure dannosa per la schiena.
 Di seguito è riportato uno schema del modulo:\\
 
 \begin{center}
-    \includegraphics[width=60mm,scale=0.7]{./images/esperimento1.png} 
+	\includegraphics[width=60mm,scale=0.7]{./images/esperimento1.png} 
+	\makebox[\linewidth]{}
 \end{center} 
-
 Questo schema riassume un ciclo del percorso totale. L’esperimento completo prevederà N cicli, di cui N/2 in cui il sollevamento/abbassamento viene eseguito correttamente, N/2 scorrettamente.
 
+% ----- ESPERIMENTO 2 -----
 	\subsubsection{Esperimento 2}
 Di seguito verrà presentato il modulo delle azioni svolte, in cui si simulano alcune manovre che un operaio può compiere durante la giornata lavorativa:
 \begin{itemize}
@@ -101,6 +134,7 @@ Di seguito verrà presentato il modulo delle azioni svolte, in cui si simulano a
 \end{itemize}
 Durata: 4.30 minuti \\
 Sollevamenti: 8 sollevamenti (2 leggeri, 3 corretti, 3 scorretti)
+
 
 
 
