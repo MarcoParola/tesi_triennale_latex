@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.7.22)  28 JUL 2019 16:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.7.22)  29 JUL 2019 17:31
 entering extended mode
 **./tesi.tex
 (tesi.tex
@@ -140,7 +140,33 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \front@out=\write3
 \openout3 = `tesi-frn.tex'.
 
+) (listings.sty
+\lst@mode=\count94
+\lst@gtempboxa=\box29
+\lst@token=\toks19
+\lst@length=\count95
+\lst@currlwidth=\dimen106
+\lst@column=\count96
+\lst@pos=\count97
+\lst@lostspace=\dimen107
+\lst@width=\dimen108
+\lst@newlines=\count98
+\lst@lineno=\count99
+\lst@maxwidth=\dimen109
+
+("C:\Users\Marco\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\lstmisc.s
+ty"
+File: lstmisc.sty 2019/02/27 1.8b (Carsten Heinz)
+\c@lstnumber=\count100
+\lst@skipnumbers=\count101
+\lst@framebox=\box30
 )
+("C:\Users\Marco\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\listings.
+cfg"
+File: listings.cfg 2019/02/27 1.8b listings configuration
+))
+Package: listings 2019/02/27 1.8b (Carsten Heinz)
+
 ("C:\Users\Marco\AppData\Local\Programs\MiKTeX 2.9\tex/latex/geometry\geometry.
 sty"
 Package: geometry 2018/04/16 v5.8 Page Geometry
@@ -150,62 +176,52 @@ sty"
 Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
 )
-\Gm@cnth=\count94
-\Gm@cntv=\count95
-\c@Gm@tempcnt=\count96
-\Gm@bindingoffset=\dimen106
-\Gm@wd@mp=\dimen107
-\Gm@odd@mp=\dimen108
-\Gm@even@mp=\dimen109
-\Gm@layoutwidth=\dimen110
-\Gm@layoutheight=\dimen111
-\Gm@layouthoffset=\dimen112
-\Gm@layoutvoffset=\dimen113
-\Gm@dimlist=\toks19
+\Gm@cnth=\count102
+\Gm@cntv=\count103
+\c@Gm@tempcnt=\count104
+\Gm@bindingoffset=\dimen110
+\Gm@wd@mp=\dimen111
+\Gm@odd@mp=\dimen112
+\Gm@even@mp=\dimen113
+\Gm@layoutwidth=\dimen114
+\Gm@layoutheight=\dimen115
+\Gm@layouthoffset=\dimen116
+\Gm@layoutvoffset=\dimen117
+\Gm@dimlist=\toks20
 
 ("C:\Users\Marco\AppData\Local\Programs\MiKTeX 2.9\tex/latex/geometry\geometry.
-cfg"))
-! Undefined control sequence.
-<recently read> \usep 
-                      
-l.9  \usep
-          ­a­ck­age{list­ings}
-? 
-! Emergency stop.
-<recently read> \usep 
-                      
-l.9  \usep
-          ­a­ck­age{list­ings}
-End of file on the terminal!
+cfg")) (tesi.aux)
+\openout1 = `tesi.aux'.
 
- 
-Here is how much of TeX's memory you used:
- 2626 strings out of 492895
- 36238 string characters out of 3123735
- 116795 words of memory out of 3000000
- 6537 multiletter control sequences out of 15000+200000
- 4403 words of font info for 15 fonts, out of 3000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 32i,0n,23p,796b,37s stack positions out of 5000i,500n,10000p,200000b,50000s
-!  ==> Fatal error occurred, no output PDF file produced!
- ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
 LaTeX Info: Redefining \it@ocap on input line 11.
 LaTeX Info: Redefining \it@ccap on input line 11.
 
 ("C:\Users\Marco\AppData\Local\Programs\MiKTeX 2.9\tex/context/base/mkii\supp-p
 df.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count97
-\scratchdimen=\dimen114
-\scratchbox=\box29
-\nofMPsegments=\count98
-\nofMParguments=\count99
-\everyMPshowfont=\toks20
-\MPscratchCnt=\count100
-\MPscratchDim=\dimen115
-\MPnumerator=\count101
-\makeMPintoPDFobject=\count102
-\everyMPtoPDFconversion=\toks21
+\scratchcounter=\count105
+\scratchdimen=\dimen118
+\scratchbox=\box31
+\nofMPsegments=\count106
+\nofMParguments=\count107
+\everyMPshowfont=\toks21
+\MPscratchCnt=\count108
+\MPscratchDim=\dimen119
+\MPnumerator=\count109
+\makeMPintoPDFobject=\count110
+\everyMPtoPDFconversion=\toks22
 )
 ("C:\Users\Marco\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\epstopdf-
 base.sty"
@@ -252,7 +268,8 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
-\AtBeginShipoutBox=\box30
+\AtBeginShipoutBox=\box32
+\c@lstlisting=\count111
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -262,15 +279,15 @@ G,.JBIG2,.JB2,.eps]
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(89.62709pt, 418.25368pt, 89.6271pt)
-* v-part:(T,H,B)=(101.40665pt, 686.7347pt, 56.9055pt)
+* h-part:(L,W,R)=(86.72377pt, 424.06033pt, 86.72377pt)
+* v-part:(T,H,B)=(86.72377pt, 671.5993pt, 86.72377pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
-* \textwidth=418.25368pt
-* \textheight=686.7347pt
-* \oddsidemargin=17.3571pt
-* \evensidemargin=17.3571pt
-* \topmargin=-7.86334pt
+* \textwidth=424.06033pt
+* \textheight=671.5993pt
+* \oddsidemargin=14.45378pt
+* \evensidemargin=14.45378pt
+* \topmargin=-22.54622pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=10.0pt
@@ -333,33 +350,92 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 87.
+<./images/sagoma_phone_watch.jpg, id=43, 415.5525pt x 1196.47pt>
+File: ./images/sagoma_phone_watch.jpg Graphic file (type jpg)
+<use ./images/sagoma_phone_watch.jpg>
+Package pdftex.def Info: ./images/sagoma_phone_watch.jpg  used on input line 10
+1.
+(pdftex.def)             Requested size: 124.6667pt x 358.94377pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 99--100
+(java_code/wearable_module.tex
+Overfull \hbox (149.59311pt too wide) in paragraph at lines 105--1
+\T1/cmr/m/n/10 al cam-bia-men-to ap-pe-na av-ve-nu-to. []
+ []
+
+[4
+
+ <./images/sagoma_phone_watch.jpg>]
+("C:\Users\Marco\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\lstlang1.
+sty"
+File: lstlang1.sty 2019/02/27 1.8b listings language file
+)
+Overfull \hbox (50.12813pt too wide) in paragraph at lines 41--42
+[][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (45.02933pt too wide) in paragraph at lines 43--44
+[][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (45.02933pt too wide) in paragraph at lines 53--54
+[][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[5]
+Overfull \hbox (4.23892pt too wide) in paragraph at lines 74--75
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (24.63412pt too wide) in paragraph at lines 97--98
+[][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (55.22693pt too wide) in paragraph at lines 109--110
+[][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (34.83173pt too wide) in paragraph at lines 110--111
+[][][][][][][][][][] 
+ []
+
+)
+Overfull \hbox (15.0pt too wide) in paragraph at lines 115--116
 [][] 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 108--111
+[6]
+Underfull \hbox (badness 10000) in paragraph at lines 124--127
 
  []
 
-<./images/esperimento1.png, id=43, 364.36125pt x 433.62pt>
+<./images/esperimento1.png, id=58, 364.36125pt x 433.62pt>
 File: ./images/esperimento1.png Graphic file (type png)
 <use ./images/esperimento1.png>
-Package pdftex.def Info: ./images/esperimento1.png  used on input line 113.
+Package pdftex.def Info: ./images/esperimento1.png  used on input line 129.
 (pdftex.def)             Requested size: 255.05113pt x 303.53192pt.
-[4
+[7 <./images/esperimento1.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 151--153
 
-] [5 <./images/esperimento1.png>] (tesi.aux) ) 
+ []
+
+[8] (tesi.aux) ) 
 Here is how much of TeX's memory you used:
- 3351 strings out of 492895
- 48259 string characters out of 3123735
- 132084 words of memory out of 3000000
- 7208 multiletter control sequences out of 15000+200000
- 8262 words of font info for 20 fonts, out of 3000000 for 9000
+ 5144 strings out of 492895
+ 72079 string characters out of 3123735
+ 368517 words of memory out of 3000000
+ 8975 multiletter control sequences out of 15000+200000
+ 10488 words of font info for 23 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,11n,25p,796b,228s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\Marco\AppData\Local\Mi
+ 41i,11n,42p,796b,1691s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\Marco\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknap
+pen/ec/dpi600\ecti0800.pk> <C:\Users\Marco\AppData\Local\MiKTeX\2.9\fonts/pk/lj
+four/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\Marco\AppData\Local\MiKTeX\2.9\f
+onts/pk/ljfour/jknappen/ec/dpi600\ecbx0800.pk> <C:\Users\Marco\AppData\Local\Mi
 KTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\Marco\AppDat
 a\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\Ma
 rco\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1000.pk> <C
@@ -369,9 +445,9 @@ fonts/cm/cmbx12.pfb><C:/Users/Marco/AppData/Local/Programs/MiKTeX 2.9/fonts/typ
 e1/public/amsfonts/cm/cmr10.pfb><C:/Users/Marco/AppData/Local/Programs/MiKTeX 2
 .9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Marco/AppData/Local/Progr
 ams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on tesi.pdf (6 pages, 162157 bytes).
+Output written on tesi.pdf (9 pages, 336687 bytes).
 PDF statistics:
- 205 PDF objects out of 1000 (max. 8388607)
+ 351 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
 

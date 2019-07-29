@@ -6,8 +6,10 @@
 \contentsline {subsection}{\numberline {2.2}Movimento scorretto}{3}% 
 \contentsline {section}{\numberline {3}Raccolta dati}{4}% 
 \contentsline {subsection}{\numberline {3.1}Sistema per la raccolta ed il salvataggio di dati}{4}% 
-\contentsline {subsubsection}{\numberline {3.1.1}Caratteristiche}{4}% 
-\contentsline {subsubsection}{\numberline {3.1.2}Applicazione Android per la rccolta}{4}% 
-\contentsline {subsection}{\numberline {3.2}Esperimenti di registrazione}{4}% 
-\contentsline {subsubsection}{\numberline {3.2.1}Esperimento 1}{4}% 
-\contentsline {subsubsection}{\numberline {3.2.2}Esperimento 2}{5}% 
+\contentsline {paragraph}{Caratteristiche}{4}% 
+\contentsline {subsection}{\numberline {3.2}Applicazione Android per la rccolta}{4}% 
+\contentsline {subsubsection}{\numberline {3.2.1}Modulo wear}{5}% 
+\contentsline {subsubsection}{\numberline {3.2.2}Modulo mobile}{6}% 
+\contentsline {subsection}{\numberline {3.3}Esperimenti di registrazione}{7}% 
+\contentsline {subsubsection}{\numberline {3.3.1}Esperimento 1}{7}% 
+\contentsline {subsubsection}{\numberline {3.3.2}Esperimento 2}{7}% 

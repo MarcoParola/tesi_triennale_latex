@@ -5,8 +5,8 @@
 \usepackage[italian]{babel}
 \usepackage{frontespizio}
 \usepackage{graphicx}
-\usepackage[bottom=2cm]{geometry}
-
+\usepackage{listings}
+\usepackage[margin=1.2in]{geometry}
 
 \begin{document}
 	
@@ -47,7 +47,7 @@ Considerando poi che quasi un terzo dei lavoratori dichiara di svolgere quotidia
 	\section{Movimentazione}
 
 	\subsection{Movimento corretto}
-Per evitare infortuni e minimizzare l'indice di rischio il modo corretto per sollevare un carico è piegare le gambe leggermente divaricate e mantenendo un’inclinazione lieve e costante del busto verso il carico, il quale deve essere posizionato alla minore distanza possibile dai piedi (circa 10 cm). L'immagine di seguito illustra i passaggi da seguire per un corretto sollevamento.
+Al fine di evitare infortuni e minimizzare l'indice di rischio, il modo corretto per sollevare un carico è piegare le gambe leggermente divaricate e mantenendo un’inclinazione lieve e costante del busto verso il carico, il quale deve essere posizionato alla minore distanza possibile dai piedi (circa 10 cm). L'immagine di seguito illustra i passaggi da seguire per un corretto sollevamento.
 
 \begin{center}
 	\makebox[\linewidth]{}
@@ -81,7 +81,7 @@ Dunque si rende necessario uno strumento che permetta di raccogliere e catalogar
 	\subsection{Sistema per la raccolta ed il salvataggio di dati}
 
 
-	\subsubsection{Caratteristiche}
+	\paragraph{Caratteristiche}
 Il sistema di cui ci muniremo dovrà contenere al suo interno sensori di vario genere, che gli permettano di registrare i movimenti e le variazioni delle condizioni ambientali esterne a cui è sottoposto, i sensori che prenderemo in considerazione e di cui l'hardware che useremo deve essere munito sono i seguenti:
 \begin{itemize}
 \item Accelerometro triassiale, misura l’accelerazione che subisce il dispositivo sui tre assi cardinali.
@@ -93,8 +93,24 @@ Inoltre un'altra proprietà che il nostro sistema deve possedere è essere \text
 
 
 % ----- APPLICAZIONE ANDROID -----
-	\subsubsection{Applicazione Android per la rccolta}
+	\subsection{Applicazione Android per la rccolta}
 La soluzione che abbiamo trovato, che rispecchia i requisiti di sopra riportati è un'applicazione Android composta da due moduli, uno che girerà su smartphone e una su smartwatch.
+
+\begin{center}
+	\makebox[\linewidth]{}
+	\includegraphics[width=30mm,scale=0.3]{./images/sagoma_phone_watch.jpg} 
+\end{center} 
+
+\subsubsection{Modulo wear}
+Il modulo wear implementa la parte dell’applicazione relativa allo smartwatch, essa ha le seguenti funzionalità: raccogliere i dati provenienti dai suoi sensori ed inviarli tramite bluetooth al telefono.\\
+Di seguito non verrà riportato il codice di tutto il modulo, ma solamente la parte relativa alla raccolta dei dati e all’invio.
+Nella seguente porzione di codice viene mostrato il callback che viene chiamato ogni volta che il valore di uno dei sensori subisce un cambiamento: ad ogni chiamata viene inserito nel buffer buffer (che può contenere 50 elementi) un oggetto che contiene informazioni relative al cambiamento appena avvenuto.
+\makebox[\linewidth]{}
+\makebox[\linewidth]{}
+\input{./java_code/wearable_module.tex}
+
+\subsubsection{Modulo mobile}
+Nel modulo mobile...
 
 \makebox[\linewidth]{}
 
@@ -133,8 +149,7 @@ Di seguito verrà presentato il modulo delle azioni svolte, in cui si simulano a
 \item 15 secondi, compiere due volte il sollevamento scorretto
 \end{itemize}
 Durata: 4.30 minuti \\
-Sollevamenti: 8 sollevamenti (2 leggeri, 3 corretti, 3 scorretti)
-
+Sollevamenti: 8 sollevamenti (2 leggeri, 3 corretti, 3 scorretti)\\
 
 
 
