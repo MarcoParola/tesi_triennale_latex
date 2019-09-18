@@ -1,0 +1,7 @@
+% ----- filtri -----
+\begin{lstlisting}[language=Matlab,  basicstyle=\footnotesize]
+	watch_mov = movmean(pressurewatch(:,2),50);
+	watchgaussian = smoothdata(watch_mov,'gaussian');
+	plot(watch_mov);
+	plot(watchgaussian)
+\end{lstlisting}

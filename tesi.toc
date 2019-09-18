@@ -6,10 +6,11 @@
 \contentsline {subsection}{\numberline {2.2}Movimento scorretto}{3}% 
 \contentsline {section}{\numberline {3}Raccolta dati}{4}% 
 \contentsline {subsection}{\numberline {3.1}Sistema per la raccolta ed il salvataggio di dati}{4}% 
-\contentsline {paragraph}{Caratteristiche}{4}% 
-\contentsline {subsection}{\numberline {3.2}Applicazione Android per la rccolta}{4}% 
+\contentsline {subsection}{\numberline {3.2}Applicazione Android per la rccolta}{5}% 
 \contentsline {subsubsection}{\numberline {3.2.1}Modulo wear}{5}% 
-\contentsline {subsubsection}{\numberline {3.2.2}Modulo mobile}{6}% 
-\contentsline {subsection}{\numberline {3.3}Esperimenti di registrazione}{7}% 
-\contentsline {subsubsection}{\numberline {3.3.1}Esperimento 1}{7}% 
-\contentsline {subsubsection}{\numberline {3.3.2}Esperimento 2}{7}% 
+\contentsline {subsubsection}{\numberline {3.2.2}Mosulo shared\_mobile\_watch}{7}% 
+\contentsline {subsubsection}{\numberline {3.2.3}Modulo mobile}{8}% 
+\contentsline {subsection}{\numberline {3.3}Esperimenti di registrazione}{9}% 
+\contentsline {subsubsection}{\numberline {3.3.1}Esperimento 1}{9}% 
+\contentsline {section}{\numberline {4}Analisi}{11}% 
+\contentsline {subsection}{\numberline {4.1}Il segnale barometrico per rilevare la manovra}{11}% 
