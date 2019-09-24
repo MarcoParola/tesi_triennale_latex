@@ -211,6 +211,7 @@ Di seguito è riportato uno schema del modulo:\\
 \makebox[\linewidth]{} 
 \makebox[\linewidth]{}
 \makebox[\linewidth]{}
+\makebox[\linewidth]{}
 Questo schema riassume un ciclo del percorso totale. L’esperimento completo prevederà 2 cicli, per un totale di 2 sollevamenti e due rilasci del carico\\
 
 \clearpage
@@ -271,6 +272,17 @@ Il seguente codice Matlab applica al segnale di partenza i due filtri, producend
 \end{center}
 \end{minipage}
 
+
+
+\clearpage
+
+% ----- SVILUPPO APPLICAZIONE REALTIME -----
+\section{Sviluppo Applicazione Realtime}
+Durante la fase finale è stato realizzato un sistema per il monitoraggio della movimentazione in tempo reale, o quasi, seguendo i medesimi passaggi della fase di analisi (vedi paragrafo 4). La  infatti anche questa fase è divisa in due parti, l'individuazione degli istanti in cui sono state compiute le manovre, seguita dalla classificazione di queste ultime.\\
+Il sistema è implementato da un'applicazione Android, divisa in tre moduli (mobile, wear, shared_mobile_watch), come l'applicazione utilizzata durante la fase della raccolta dei dati (vedi paragrafo 3.2).
+
+\subsection{Detection}
+La fase di detection degli istanti in cui è avvenuto il task del sollevamento è sviluppato nel modulo \textit{wear}.
 
 \end{document}
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.7.22)  18 SEP 2019 16:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.7.22)  23 SEP 2019 17:07
 entering extended mode
 **./tesi.tex
 (tesi.tex
@@ -549,12 +549,12 @@ File: ./images/esperimento1.png Graphic file (type png)
 Package pdftex.def Info: ./images/esperimento1.png  used on input line 206.
 (pdftex.def)             Requested size: 255.05113pt x 303.53192pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 203--215
+Overfull \hbox (15.0pt too wide) in paragraph at lines 203--216
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 203--215
+Underfull \hbox (badness 10000) in paragraph at lines 203--216
 
  []
 
@@ -564,15 +564,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 203--215
 File: ./images/segnali/pressure_phone_grezzo.png Graphic file (type png)
 <use ./images/segnali/pressure_phone_grezzo.png>
 Package pdftex.def Info: ./images/segnali/pressure_phone_grezzo.png  used on in
-put line 240.
+put line 241.
 (pdftex.def)             Requested size: 1013.88098pt x 276.6567pt.
 
-Overfull \hbox (31.17741pt too wide) in paragraph at lines 240--241
+Overfull \hbox (31.17741pt too wide) in paragraph at lines 241--242
  [] 
  []
 
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 236--249
+Overfull \hbox (15.0pt too wide) in paragraph at lines 237--250
 [][]
  []
 
@@ -581,7 +581,7 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 236--249
 sty"
 File: lstlang1.sty 2019/02/27 1.8b listings language file
 )
-Underfull \hbox (badness 10000) in paragraph at lines 253--2
+Underfull \hbox (badness 10000) in paragraph at lines 254--2
 
  []
 
@@ -593,10 +593,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 253--2
 File: ./images/segnali/pressure_phone_movmean.png Graphic file (type png)
 <use ./images/segnali/pressure_phone_movmean.png>
 Package pdftex.def Info: ./images/segnali/pressure_phone_movmean.png  used on i
-nput line 259.
+nput line 260.
 (pdftex.def)             Requested size: 1013.88098pt x 276.6567pt.
 
-Overfull \hbox (31.17741pt too wide) in paragraph at lines 259--260
+Overfull \hbox (31.17741pt too wide) in paragraph at lines 260--261
  [] 
  []
 
@@ -604,15 +604,17 @@ Overfull \hbox (31.17741pt too wide) in paragraph at lines 259--260
 File: ./images/segnali/pressure_phone_gauss.png Graphic file (type png)
 <use ./images/segnali/pressure_phone_gauss.png>
 Package pdftex.def Info: ./images/segnali/pressure_phone_gauss.png  used on inp
-ut line 269.
+ut line 270.
 (pdftex.def)             Requested size: 289.67712pt x 79.0439pt.
 
-Overfull \hbox (31.21223pt too wide) in paragraph at lines 269--270
+Overfull \hbox (31.21223pt too wide) in paragraph at lines 270--271
  [] 
  []
 
 [12 <./images/segnali/pressure_phone_movmean.png (PNG copy)> <./images/segnali/
-pressure_phone_gauss.png (PNG copy)>] (tesi.aux) ) 
+pressure_phone_gauss.png (PNG copy)>] [13
+
+] (tesi.aux) ) 
 Here is how much of TeX's memory you used:
  7569 strings out of 492895
  112863 string characters out of 3123735
@@ -621,26 +623,26 @@ Here is how much of TeX's memory you used:
  12715 words of font info for 26 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  51i,11n,46p,796b,1691s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\Marco\AppData\Loca
-l\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecti0800.pk> <C:\Users\Marco\Ap
-pData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\User
-s\Marco\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx0800.pk
-> <C:\Users\Marco\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\e
-crm0900.pk> <C:\Users\Marco\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/e
-c/dpi600\ecbx0900.pk> <C:\Users\Marco\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/
-jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\Marco\AppData\Local\MiKTeX\2.9\fonts/
-pk/ljfour/jknappen/ec/dpi600\ecti1000.pk> <C:\Users\Marco\AppData\Local\MiKTeX\
-2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\Marco\AppData\Loc
-al\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1000.pk> <C:\Users\Marco\A
-ppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk><C:/User
-s/Marco/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12
-.pfb><C:/Users/Marco/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfo
-nts/cm/cmr10.pfb><C:/Users/Marco/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/
-public/amsfonts/cm/cmr12.pfb><C:/Users/Marco/AppData/Local/Programs/MiKTeX 2.9/
-fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on tesi.pdf (13 pages, 500615 bytes).
+ <C:\Users\Marco\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappe
+n/ec/dpi600\ecti0800.pk> <C:\Users\Marco\AppData\Local\MiKTeX\2.9\fonts/pk/ljfo
+ur/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\Marco\AppData\Local\MiKTeX\2.9\fon
+ts/pk/ljfour/jknappen/ec/dpi600\ecbx0800.pk> <C:\Users\Marco\AppData\Local\MiKT
+eX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0900.pk> <C:\Users\Marco\AppData\
+Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx0900.pk> <C:\Users\Marc
+o\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\
+Users\Marco\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecti100
+0.pk> <C:\Users\Marco\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi6
+00\ecrm1000.pk> <C:\Users\Marco\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknapp
+en/ec/dpi600\ecbx1000.pk> <C:\Users\Marco\AppData\Local\MiKTeX\2.9\fonts/pk/ljf
+our/jknappen/ec/dpi600\ecbx1440.pk><C:/Users/Marco/AppData/Local/Programs/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Marco/AppData/Local/P
+rograms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Marco/App
+Data/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Use
+rs/Marco/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy1
+0.pfb>
+Output written on tesi.pdf (14 pages, 503726 bytes).
 PDF statistics:
- 486 PDF objects out of 1000 (max. 8388607)
+ 494 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  46 words of extra memory for PDF output out of 10000 (max. 10000000)
 
