@@ -1,0 +1,7 @@
+% ----- funnzione per il filtraggio -----
+\begin{lstlisting}[language=Matlab,  basicstyle=\footnotesize]
+function gaussian_signal = signal_filter(x)
+    watch_mov = movmean(x,50);
+    gaussian_signal = smoothdata(watch_mov,'gaussian');
+end
+\end{lstlisting}

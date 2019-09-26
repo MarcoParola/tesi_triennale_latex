@@ -229,8 +229,7 @@ Questa fase di analisi si divide in due sottofasi:
 
 % ----- ANALISI SEGNALE BAROMETRICO -----
 \subsection{Il segnale barometrico per rilevare la manovra}
-La prima fase di analisi ha previsto la visualizzazione dei grafici dei segnali risultanti dalle rilevazioni degli otto sensori.\\ Il sensore che dà maggiori informazioni sul momento in cui avviene l’abbassamento è il barometro dell'orologio; nel grafico, infatti, si nota che in corrispondenza di un abbassamento si ha un innalzamento della pressione atmosferica del barometro, con un conseguente abbassamento quando ci si alza nuovamente.
-
+La prima fase di analisi ha previsto la visualizzazione dei grafici dei segnali risultanti dalle rilevazioni degli otto sensori.\\ Il sensore che dà maggiori informazioni sul momento in cui avviene l’abbassamento è il barometro dell'orologio; nel grafico, infatti, si nota che in corrispondenza di un abbassamento si ha un innalzamento della pressione atmosferica del barometro, con un conseguente abbassamento quando ci si alza nuovamente.\\
 L’elevato livello di rumore bianco di questo segnale rende difficile il compito di trovare delle regole generali per individuare algoritmicamente il momento in cui la persona si abbassa. \\
 Inoltre, il sensore è affetto da disturbi che possono influenzare l’andamento del segnale (es. correnti d’aria o le variazioni di pressione generate dall’aprire o chiudere una finestra).
 
@@ -278,11 +277,46 @@ Il seguente codice Matlab applica al segnale di partenza i due filtri, producend
 
 % ----- SVILUPPO APPLICAZIONE REALTIME -----
 \section{Sviluppo Applicazione Realtime}
-Durante la fase finale è stato realizzato un sistema per il monitoraggio della movimentazione in tempo reale, o quasi, seguendo i medesimi passaggi della fase di analisi (vedi paragrafo 4). La  infatti anche questa fase è divisa in due parti, l'individuazione degli istanti in cui sono state compiute le manovre, seguita dalla classificazione di queste ultime.\\
-Il sistema è implementato da un'applicazione Android, divisa in tre moduli (mobile, wear, shared_mobile_watch), come l'applicazione utilizzata durante la fase della raccolta dei dati (vedi paragrafo 3.2).
+Durante la fase finale è stato realizzato un sistema per il monitoraggio della movimentazione in tempo reale, seguendo i medesimi passaggi compiuti nella fase di analisi (vedi paragrafo 4). Infatti, anche questa fase, è divisa in due parti: l'individuazione degli istanti in cui sono state compiute le manovre, seguita dalla classificazione di queste ultime.\\
+In realtà non è propriamente corretto definire questa applicazione realtime, in quanto la rilevazione non è immediata, ma si presenta un tempo di latenza dovuto principalmente all'aplicazione di filtri al segnale grezzo. Come spiegato nei paragrasfi successivi, al segnale registrato, vengono applicati due filtri a media mobile: in questo tipo di filtro si considera un certo numero di campioni N, detto FINESTRA, per calcolare il valore del segnale ad un determinato passo; dunque è neccessario aver collezionato gli N/2 campioni precedenti e gli N/2 successivi. Se considerando che vengono applicati due filtri di questa tipologia in cascata, sono neccessari un numero "elevato" di campioni futuri, per calcolare il valore del segnale ad un istante precedente.\\
+Il sistema è implementato da un'applicazione Android, divisa in tre moduli, come l'applicazione utilizzata durante la fase della raccolta dei dati (vedi paragrafo 3.2): 
+\begin {itemize}
+\item \textbf{wear}, per la fase di detection
+\item \textbf{mobile}, per la fase di classificazione.
+\item \textbf{shared\_mobile\_watch}, una semplice libreria per la condivisioni di classi comuni ad entrambi i moduli precedenti \\
+\end{itemize}
 
+
+% ----- DESCRIZIONE MODULO WEAR E FUNZIONALITA' PRINCIPALI -----
 \subsection{Detection}
 La fase di detection degli istanti in cui è avvenuto il task del sollevamento è sviluppato nel modulo \textit{wear}.
+La fase di detection degli istanti in cui è avvenuto il task del sollevamento è sviluppato nel modulo wear, in quanto è il sengale che, se pulito correttamente dai rumori, è quello che evidenzia meglio il compimento di un abbassamento. 
+
+% ----- OPZIONI SU COME REALIZZARE I FILTRI -----
+\subsubsection{Realizzazione dei filtri per la pulizia del segnale}
+Il primo passo compiere una scelta progettuale: come implementare i filtri per la pulizia del segnale, che realizzino il medesimo comportamento delle funzioni Matlab \textit{movmean(signal, window\_size)} e \textit{smoothdata(signal, 'gaussian')}, citate precedentemente (vedi paragrafo 4.1). Alcune opzioni possibili sono le seguienti: 
+\begin{itemize}
+\item {scrivere uno script matlab (.m) contenente una funzoine ed esportare un un file .cpp (o .c) generato da Matlab, contenente del codice scritto nel linguaggio di programmazione C++ (oppure C), da includere nel progetto Android ed utilizzare Android Native Kit (NDK), per sviluppare questa porzione del modulo. \\
+Questa opzione è molto valida, e dunque da prendere in considerazione per una versione più ottimizzata del sistema; in particolare perchè l'utilizzo del linguaggio C/C++ su Andoroid, viene fatto nei casi in cui si presentino probemi di calcolo computazionale, che appunto sono risolti con questa tecnica. 
+Tuttavia non è stata fatta presa come scelta, a causa delle complicazioni che introduce nello sviluppo del progetto.\\
+Il seguente script matlab mostra la funzione da scrivere, che prende come argomento un array di valori (il segnale grezzo) e e come tipo di ritorno restituisce un altro array di valori (il segnale filtrato).\\
+\input{./matlab_code/funzione_filtro.tex}}
+\item{facendo riferimento allo script matlab del punto precedente, è possibile creare un Package java, grazie al tool \textbf{MATLAB Builder JA}; includendo il file .jar prodotto all'interno del progetto android, è possibile effettuare la pulizia del segnale. \\
+Questa progedura ha come inconveniente la generazione di codice ridondante, per cui la scelta presa è quella descritta nel seguente punto.}
+\item{implementare from scratch i due filtri necessari. L'implementazione sarà descritta nel seguente paragrafo.}
+\end{itemize}
+
+% ----- VALUTAZIONE DIMENSIONI BUFFER E INTRODUZIONI VARIABILI -----
+\subsubsection{Memorizzazione dei segnali e valutazione delle lunghezze dei buffer}
+Il secondo passo da compiere, per realizzare questo modulo, è lo storage dei campioni che descrivono un certo segnale. Non potendo mantere in memoria tutto il segnale registrato dal barometro, perchè potenzialmente infinito, è molto importante definire la quantità di campioni che possiamo memorizzare, per questioni legate principalmente alle risorse limitate dei dispositivi di cui ci siamo dotati. \\
+Per questa parte di modulo è necessario mantenere in memoria tre buffer, uno per il segnale grezzo \textit{noisy\_signal}, uno per il segnale a cui viene applicato il primo filtro \textit{movmean\_signal} e l'ultimo per il segnale pulito finale \textit{gaussian\_signal}. In particolare la scelta che è stata fatta è di 50 campioni per il primo segnale, poichè la frequenza di campionamento è di 50 Hz, e di 100 campioni per quanto riguarda i secondi due segnali, poichè dalla fase di analisi si può notare che il compimento di un abbassamento, corrisponde a circa 100 campioni del segnale barometrico dello smartwatch. Questi variabili costanti possono essere soggette a modifiche, in quanto valutate euristicamente, in particolare la dimensione dei secondi due buffer; dunque compiendo uno studio in futuro più dettagliato sulle modalità e i tempi, con cui può essere compiuto questo task, si possono modificare queste dimensioni, in modo da migliorare i risultati. \\
+\input{./java_code/final_project_variables.tex}
+Ioltre per ognuno dei precedenti segnali, viene memorizzato un array della stessa dimensione, per i timestamp: stesso indice descrive valore e istante di tempo dello stesso campione: \textit{ArrayList<Long> noisy\_signal\_timestamp; ArrayList<Long> movmean\_signal\_timestamp; ArrayList<Long> gaussian\_signal\_timestamp;}
+
+% ----- IMPLEMENTAZIONE FILTRI ------
+\subsubsection{Implementazione Filtri}
+\input{./java_code/final_project_filters.tex}
+
 
 \end{document}
 
