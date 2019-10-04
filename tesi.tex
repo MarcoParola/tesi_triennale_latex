@@ -242,10 +242,24 @@ Questa fase di analisi si divide in due sottofasi:
 La prima fase di analisi ha previsto la creazione dei grafici, risultanti dalle rilevazioni degli otto sensori (relativi alla stessa registrazione), per poter eseguire avere una panoramica sull'andamento dei segnali collezionati, poter compiere le prime considerazioni ed inquadrare eventuali problemi che potrebbero insorgere.\\
 Matlab mette a disposizione la funzione \textit{plot} per poter visualizzare grafici di forme diverse, in relazione ai tipi che vengono passati come argomento, quando la fuzione viene chiamata:  Se y `e un vettore, \textit{plot(x)} produce un grafico lineare degli elementi di y contro l’indice degli elementi di y.  Se venogno specificati due vettori come argomento,\textit{ plot(x, y) } produce un grafico, in cui i valori della x vengono posizionati sull'ascissa e quelli di y sull'ordinata. \\
  % si nota che sono grafici molto diversi perchè prodotti da segnali che hanno differenti caratteristiche.. signal preprocessing (o forse lo dico dopo?)
+
+% ---- GRAFICI GIROSCOPIO ------
+\subsubsection{Giroscopio smartphone}
+\begin{minipage}{\linewidth}
+\begin{center}
+\includegraphics[width=160mm, height= 70mm]{./images/registrazione_tesi/gyrXYZ.jpg} 
+\captionof{figure}{Grafico accelerometro triassiale dello smartphone.\\}
+\end{center}
+\end{minipage}
+\makebox[\linewidth]{}
+\makebox[\linewidth]{}\makebox[\linewidth]{}\makebox[\linewidth]{}
+\makebox[\linewidth]{}\makebox[\linewidth]{}\makebox[\linewidth]{}
+\makebox[\linewidth]{}\makebox[\linewidth]{}\makebox[\linewidth]{}
+
 \clearpage
 
 % ---- GRAFICI BAROMETRO ------
-\subsubsection{Barometro Smatwatch\\} 
+\subsubsection{Barometro smatwatch\\} 
 \begin{minipage}{\linewidth}
 \begin{center}
 \includegraphics[width=160mm, height= 80mm]{./images/registrazione_tesi/pressure_phone.jpg} 
@@ -258,7 +272,7 @@ Matlab mette a disposizione la funzione \textit{plot} per poter visualizzare gra
 \makebox[\linewidth]{}\makebox[\linewidth]{}\makebox[\linewidth]{}
 \makebox[\linewidth]{}\makebox[\linewidth]{}\makebox[\linewidth]{}
 
-\subsubsection{Barometro Smatphone\\} 
+\subsubsection{Barometro smatphone\\} 
 \makebox[\linewidth]{}
 \begin{minipage}{\linewidth}
 \begin{center}
@@ -270,7 +284,7 @@ Matlab mette a disposizione la funzione \textit{plot} per poter visualizzare gra
 \clearpage
 
 % ---- GRAFICI ACCELEROMETRO OROLOGIO ------
-\subsubsection{Accelerometro Smartwatch}
+\subsubsection{Accelerometro smartwatch}
 \begin{minipage}{\linewidth}
 \begin{center}
 \includegraphics[width=160mm, height= 70mm]{./images/registrazione_tesi/accelerometrXYZ.jpg} 
@@ -310,7 +324,7 @@ Matlab mette a disposizione la funzione \textit{plot} per poter visualizzare gra
 \makebox[\linewidth]{}\makebox[\linewidth]{}\makebox[\linewidth]{}
 
 % ---- GRAFICI ACCELEROMETRO TELEFONO------
-\subsubsection{Accelerometro Smartphone}
+\subsubsection{Accelerometro smartphone}
 \begin{minipage}{\linewidth}
 \begin{center}
 \includegraphics[width=160mm, height= 70mm]{./images/registrazione_tesi/acc_ph.jpg} 
@@ -350,10 +364,44 @@ Matlab mette a disposizione la funzione \textit{plot} per poter visualizzare gra
 
 
 % ---- GRAFICI MAGNETOMETRO ------
-\subsubsection{Magnetometro}
+\subsubsection{Magnetometro smartphone}
+\begin{minipage}{\linewidth}
+\begin{center}
+\includegraphics[width=160mm, height= 70mm]{./images/registrazione_tesi/mag_phXYZ.jpg} 
+\captionof{figure}{Grafico accelerometro triassiale dello smartwatch.\\}
+\end{center}
+\end{minipage}
+\makebox[\linewidth]{}
+\makebox[\linewidth]{}\makebox[\linewidth]{}\makebox[\linewidth]{}
+\makebox[\linewidth]{}\makebox[\linewidth]{}\makebox[\linewidth]{}
+\makebox[\linewidth]{}\makebox[\linewidth]{}\makebox[\linewidth]{}
 
-% ---- GRAFICI GIROSCOPIO ------
-\subsubsection{Giroscopio}
+% ---- X -----
+\begin{minipage}{\linewidth}
+\begin{center}
+\includegraphics[width=154mm, height= 40mm]{./images/registrazione_tesi/mag_phX.jpg} 
+\end{center}
+\end{minipage}
+
+% ---- Y -----
+\begin{minipage}{\linewidth}
+\begin{center}
+\includegraphics[width=154mm, height= 40mm]{./images/registrazione_tesi/mag_phY.jpg} 
+\end{center}
+\end{minipage}
+\makebox[\linewidth]{}
+
+% ---- Z -----
+\begin{minipage}{\linewidth}
+\begin{center}
+\includegraphics[width=154mm, height= 40mm]{./images/registrazione_tesi/mag_phZ.jpg} 
+\captionof{figure}{Scomposizione del segnale magnetometrico triassiale in tre grafici.\\}
+\end{center}
+\end{minipage}
+\makebox[\linewidth]{}
+
+
+\clearpage
 
 % ----- IL PROBLEMA DEGLI OUTLIER -----
 \subsection{Il problema degli outlier}
@@ -363,10 +411,10 @@ Un problema che si riscontra dalla fase precedente è la presenza di outlier: sa
 \begin{center}
 \includegraphics[width=154mm, height= 40mm]{./images/registrazione_tesi/outliers.jpg} 
 \captionof{figure}{Grafico accelerometro asse X dello smartwatch.\\}
+\vspace{8mm}
 \end{center}
 \end{minipage}
 \makebox[\linewidth]{}
-
 Costruendo il grafico del segnale si nota questi valori inattesi daii picchi che non permettono una scala ragionevolmente visualizzabile <- TODO
 
 % ----- ANALISI SEGNALE BAROMETRICO -----
@@ -380,7 +428,7 @@ Inoltre, il sensore è affetto da disturbi che possono influenzare l’andamento
 \makebox[\linewidth]{}
 \begin{minipage}{\linewidth}
 \begin{center}
-\includegraphics[width=160mm, height= 60mm]{./images/registrazione_tesi/pressure_watch.jpg} 
+\includegraphics[width=150mm, height= 60mm]{./images/registrazione_tesi/pressure_watch.jpg} 
 \captionof{figure}{Segnale barometrico dello smartphone.\\}
 \end{center}
 \end{minipage}
