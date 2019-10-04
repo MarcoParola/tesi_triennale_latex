@@ -19,8 +19,8 @@
 \Divisione{Scuola di Ingegneria} 
 \Corso[Laurea]{Ingegneria Informatica} 
 \Annoaccademico{2019--2020} 
-\Titolo{Titolo} 
-\Sottotitolo{Sottotitolo}
+\Titolo { \makebox [\linewidth ]{} \makebox [\linewidth ]{} \makebox[\linewidth]{} Monitoraggio danni muscolo-scheletrici in seguito a sollevamenti di carichi}
+\Sottotitolo {Sviluppo modulo di rilevazione dell'abbassamento}
 \Filigrana [height=4cm,before=0.28,after=1]{./images/stemma_unipi.png} 
 
 
@@ -36,7 +36,7 @@
 	\clearpage
 
 
-% ----- INTRODUZIONE -----
+% ----- CAPITOLO I : introduzione -----
 	\section{Introduzione}
 
 
@@ -50,18 +50,28 @@ condizioni ergonomiche sfavorevoli, comportano rischi di patologie da
 sovraccarico biomeccanico, in particolare dorso-lombari ”.} \\ \\
 \end{addmargin}
 Questa è la definizione di Movimentazione Manuale dei Carichi o MMC (o, in inglese, Manual Handlng of Loads, MHL), data dall'articolo 167, decreto legislativo 81/08. \\ Queste manovre, svolte quotidianamente da operai sul posto di lavoro, rappresentano una delle cause che favoriscono l’insorgere di disturbi e patologie alla colonna vertebrale. Infatti, se consideriamo i dati provenienti dagli enti di previdenza sociale relativi al tipo e ai numeri degli infortuni sul lavoro e delle malattie professionali, questi evidenziano come, a livello mondiale, a prevalere siano malattie professionali classificabili come disturbi Muscolo-Scheletrici. \\
-Si rende necessario, quindi, procedere ad una corretta valutazione del rischio da movimentazione manuale di carichi, al fine di attuare idonei interventi di prevenzione e protezione che vadano a mitigare, se non annullare, eventuali danni a carico degli operatori. Considerando poi che quasi un terzo dei lavoratori dichiara di svolgere quotidianamente questo tipo di operazione, è lecito pensare che, avere uno strumento capace di analizzare il modo in cui si effettua questo task, potrebbe permettere di comprendere il problema più a fondo e cercare una soluzione mirata.\\
+Dalle statistiche emerge quanto i rischi derivanti da MMC siano un problema su molteplici fronti, nonostante l'introduzione di normative, che negli anni hanno posto sempre più attenzione alla tutela dei lavoratori, oltre a sensibilizzare i datori di lavoro e sullo standardizzare il modo in cui si svolge la mansione. \\
+Il D.Lgs. 81/08, nell’allegato XXIII, introduce metodi di valutazione del rischio, presentati nella norma ISO-11228, redatta a seguito di studi effettuati dal NIOSH (National Institute for Occupational Safety and Health Administration), l’agenzia federale statunitense che si occupa di ricerca e formulazione di raccomandazioni per prevenire infortuni e malattie sul lavoro. \\
+Tale norma è divisa in tre parti, una per ogni tipologia di movimentazione dei carichi, nello specifico:
+\begin{itemize}
+\item Sollevamento e trasporto;
+\item Traino e spinta;
+\item Maneggiare carichi leggeri ad alta frequenza;
+\end{itemize}
+Questa tesi si concentra sulla parte di sollevamento dei carichi. \\ \\
+In generale, si rende necessario, quindi, procedere ad una corretta valutazione del rischio da movimentazione manuale di carichi, al fine di attuare idonei interventi di prevenzione e protezione che vadano a mitigare, se non annullare, eventuali danni a carico degli operatori. Considerando poi che quasi un terzo dei lavoratori dichiara di svolgere quotidianamente questo tipo di operazione, è lecito pensare che, avere uno strumento capace di analizzare il modo in cui si effettua questo task, potrebbe permettere di comprendere il problema più a fondo e cercare una soluzione mirata.\\
 L'obiettivo finale è, quindi, lo sviluppo di uno strumento, che monitori costantemente, durante la giornata lavorativa, i movimenti di un operatore e valuti il rischio a cui si espone, compiendo determinati operazioni, al fine di poter correggere gli errori compiuti duramtne l'esecuzione e trovare soluzioni ergonomiche atte a migliorare la qualità e l'ambiente lavorativo.\\ \\
-Lo scopo di questa tesi è analizzare i movimenti compiuti durante il \textbf{sollevamento di un carico elevato} mediante dispositivi indossabili, che contengono al loro interno sensori, da cui raccogliere dati, per poi analizzarli in un secondo momento, al fine di capire se i dispositivi hardware, utilizzati nella prima fase di storage dei dati, sono sufficienti a distinguere una operazione eseguita in modo corretto, da una eseguita scorrettamente e che potrebbe causare lesioni. Infine realizzare uno strumento che, realtime, possa avvisare un utente, ogni qual volta compia una manovra potenzialmente dannosa.
+Lo scopo di questa tesi è analizzare i movimenti compiuti durante il \textbf{sollevamento di un carico elevato} mediante dispositivi indossabili, che contengono al loro interno sensori, da cui raccogliere dati, per poi analizzarli in un secondo momento, al fine di capire se i dispositivi hardware, utilizzati nella prima fase di storage dei dati, sono sufficienti a distinguere una operazione eseguita in modo corretto, da una eseguita scorrettamente e che potrebbe causare lesioni. Questa analisi deve gettare le basi per poter realizzare uno strumento che, in tempo reale, possa avvisare un utente, ogni qual volta compia una manovra potenzialmente dannosa.
 
 
 	\clearpage
 
-% ------ CAPITOLO I: descrizione movimento ------
+% ------ CAPITOLO II : descrizione movimento ------
 	\section{Movimentazione}
 
+In prima battuta è fondamentale comprendere come debba essere compiuto il task del sollevamento; in modo da poter effettuare una fase di farmazione al personale, che durante la giornata lavorativa si trova a dover affrontare il movimento considerato. 
 	\subsection{Movimento corretto}
-Al fine di evitare infortuni e minimizzare l'indice di rischio, il modo corretto, per sollevare un carico, è piegare le gambe leggermente divaricate (quanto le spalle) e, mantenendo un’inclinazione lieve e costante del busto verso il carico, il quale deve essere posizionato alla minore distanza possibile dai piedi (circa 10 cm), tornare in posizione eretta facendo forza principalmente sulle gambe. \\ L'immagine di seguito riportata illustra i passaggi da seguire per un corretto sollevamento.\\
+Al fine di evitare infortuni e minimizzare l'indice di rischio, il modo corretto, per sollevare un carico, è piegare le gambe, mantenendole leggermente divaricate, all'altezza delle spalle e, mantenendo un’inclinazione lieve e costante del busto verso il carico, il quale deve essere posizionato alla minore distanza possibile dai piedi (circa 10 cm), tornare in posizione eretta facendo forza principalmente sulle gambe. \\ L'immagine di seguito riportata illustra i passaggi da seguire per un corretto sollevamento.\\
 
 \makebox[\linewidth]{}
 \begin{center}
@@ -91,7 +101,7 @@ Un esempio di un modo scorretto di sollevare un carico è invece illustrato nell
 
 	\clearpage
 
-% ----- CAPITOLO II -------
+% ----- CAPITOLO III : raccolta dati -------
 	\section{Raccolta dati}
 Per poter eseguire uno studio del rischio che corre una persona, sollevando un carico elevato, si affronta una prima fase in cui si raccolgono i dati relativi alla movimentazione di quest'ultima. \\
 Dunque si rende necessario uno strumento che permetta di raccogliere e catalogare informazioni, con cui poter ricostruire il movimento e in una seconda fase eseguire un analisi per poter quantificare il rischio. \\
@@ -112,7 +122,7 @@ I sensori che prenderemo in considerazione, di cui l'hardware dovrà essere muni
 
 \begin{center}
 \begin{minipage}{0.48\linewidth}
-\includegraphics[width=\linewidth]{./images/triaxial_sensor.png}
+\includegraphics[width=70mm]{./images/triaxial_sensor.png}
 \makebox[\linewidth]{}
 \captionof{figure}{Sistema di coordinate (relativo allo smartphone) utilizzato dall'API Sensor.}
 \end{minipage}
@@ -126,22 +136,22 @@ Un'altra proprietà che il nostro sistema deve possedere è essere \textbf{mini-
 
 % ----- APPLICAZIONE ANDROID -----
 	\subsection{Applicazione Android per la rccolta}
-La soluzione che abbiamo trovato, che rispecchia i requisiti di sopra riportati è un'applicazione Android composta da due dispositivi hardaware: smartphone e smartwatch. \\ 
-In particolare durante lo svolgimento della tesi abbiamo utilizzato uno smartphone Samsung Galaxy S6, sistema operativo Android 7.0 e uno smartwatch Huawei Watch 2, sistema operativo Wear OS 2.0 . \\
-L'applicazione è stata sviluppata sull’IDE Android Studio, che integra interessanti funzionalità sia per la creazione di interfacce grafiche, sia per la parte relativa all’accesso al file system dei dispositivi compatibili.
-In particolare è sviluppata in 3 moduli principali:
+La soluzione che abbiamo trovato, che rispecchia i requisiti sopra riportati è un'applicazione Android, che gira su due dispositivi hardaware distinti: smartphone e smartwatch. \\ 
+La scelta del sistema operativo, su cui si basa il sistema, è dovuta a vari fattori; in primo luogo la vasta gamma di prodotti, su cui è installato Android, molto differenti tra loro sia per caratteristiche, che per fasce di prezzi. Inoltre l'applicazione è stata sviluppata sull’IDE Android Studio, che integra interessanti funzionalità sia per la creazione di interfacce grafiche, sia per la parte relativa all’accesso al file system dei dispositivi compatibili. \\
+In particolare durante lo svolgimento della tesi è stato adoperato uno smartphone Samsung Galaxy S6, sistema operativo Android 7.0 e uno smartwatch Huawei Watch 2, sistema operativo Wear OS 2.0 . \\
+Di seguito i 3 moduli principali, nei quali è organizzato il progetto:
 \begin{itemize}
 \item mobile
 \item wear
 \item shared\_mobile\_watch \\
 \end{itemize}
-Il fine di questo sistema è produrre nel file system del telefono, in particolare nella directory "Documents", otto file CSV: quattro relativi allo smartphone \textit{magnetometr\_phone, gyroscope\_phone, accelerometr\_phone, pressure\_phone} e quattro relativi allo smartwatch \textit{magnetometr\_watch, gyroscope\_watch, accelerometr\_watch, pressure\_watch}; ognuno di questi 4 file descrive uno dei sensori descritti. \\
+Il fine di questo sistema è produrre nel file system del telefono, in particolare nella directory "Documents", \textit{Environment.DIRECTORY\_DOCUMENTS}, otto file CSV: quattro relativi allo smartphone \textit{magnetometr\_phone, gyroscope\_phone, accelerometr\_phone, pressure\_phone} e quattro relativi allo smartwatch \textit{magnetometr\_watch, gyroscope\_watch, accelerometr\_watch, pressure\_watch}; ognuno di questi 4 file descrive il segnale proveniente da uno dei sensori precedentemente citati. \\
 
 
 \makebox[\linewidth]{}
 \begin{minipage}{\linewidth}
 \begin{center}
-\includegraphics[width=30mm]{./images/sagoma_phone_watch.jpg} 
+\includegraphics[width=35mm]{./images/sagoma_phone_watch.jpg} 
 \makebox[\linewidth]{}
 \captionof{figure}{Posizionamento dei dispositivi indossabili sull'utente.}
 \end{center}
@@ -191,7 +201,7 @@ Dopo essersi muniti di uno strumento che rispecchi i requisiti precedentemente e
 
 % ----- ESPERIMENTO I -----
 	\subsubsection{Esperimento 1}
-Questo primo esperimento svolto è piuttosto semplice, vengono eseguite essenzialmente 3 azioni:
+L' esperimento svolto è piuttosto semplice, vengono eseguite essenzialmente 3 azioni in loop:
 \begin {itemize}
 \item camminata
 \item sollevamento del carico 
@@ -212,12 +222,13 @@ Di seguito è riportato uno schema del modulo:\\
 \makebox[\linewidth]{}
 \makebox[\linewidth]{}
 \makebox[\linewidth]{}
-Questo schema riassume un ciclo del percorso totale. L’esperimento completo prevederà 2 cicli, per un totale di 2 sollevamenti e due rilasci del carico\\
+Questo schema riassume un ciclo del percorso totale. L’esperimento completo prevederà 2 cicli, per un totale di 2 sollevamenti e due rilasci del carico\\ \\
+In generale gli esperimenti da svolgere, dovrebbero essere molteplici e dovrebbero prevedere una gamma molto più ampia di azioni, che un lavoratore potrebbe compiere: permanenza alla scrivania, utilizzo di dispositivi elettronici, utilizzo di attrezzatura da operaio. Inoltre dovrebbero essere effettuati in condizioni ambientali differenti, per poter realizzare un sistema il più universale possibile.
 
 \clearpage
 
 
-% ------ FASE DI ANALISI ------
+% ------ CAPITOLO IV : analisi ------
 \section{Analisi}
 La fase che segue la raccolta è l'analisi dei dati ottenuti dall'esperimento eseguito. Questo passaggio prevede l'importazione dei dati sull'ambiente di calcolo MATLAB, l'analisi e la processazione dei segnali, mediante l'utilizzo  del pacchetto Signal Processing Toolbox 8.1. \\
 Questa fase di analisi si divide in due sottofasi:
@@ -226,23 +237,154 @@ Questa fase di analisi si divide in due sottofasi:
 \item Classificazione della manovra. Questa fase viene fatta da una rete neurale, che riceve in input i parametri più significativi, calcolati dalle porzioni di segnale individuate nella fase di detection, e classifica la manovra come \textit{corretta}, \textit{scorretta} o \textit{carico assente}.
 \end{itemize}
 
+% ----- VISUALIZZAZIONE GRAFICI -----
+\subsection{Visualizzazione grafici}
+La prima fase di analisi ha previsto la creazione dei grafici, risultanti dalle rilevazioni degli otto sensori (relativi alla stessa registrazione), per poter eseguire avere una panoramica sull'andamento dei segnali collezionati, poter compiere le prime considerazioni ed inquadrare eventuali problemi che potrebbero insorgere.\\
+Matlab mette a disposizione la funzione \textit{plot} per poter visualizzare grafici di forme diverse, in relazione ai tipi che vengono passati come argomento, quando la fuzione viene chiamata:  Se y `e un vettore, \textit{plot(x)} produce un grafico lineare degli elementi di y contro l’indice degli elementi di y.  Se venogno specificati due vettori come argomento,\textit{ plot(x, y) } produce un grafico, in cui i valori della x vengono posizionati sull'ascissa e quelli di y sull'ordinata. \\
+ % si nota che sono grafici molto diversi perchè prodotti da segnali che hanno differenti caratteristiche.. signal preprocessing (o forse lo dico dopo?)
+\clearpage
+
+% ---- GRAFICI BAROMETRO ------
+\subsubsection{Barometro Smatwatch\\} 
+\begin{minipage}{\linewidth}
+\begin{center}
+\includegraphics[width=160mm, height= 80mm]{./images/registrazione_tesi/pressure_phone.jpg} 
+\captionof{figure}{Segnale barometrico dello smartphone.\\}
+\end{center}
+\end{minipage}
+\makebox[\linewidth]{}
+\makebox[\linewidth]{}\makebox[\linewidth]{}\makebox[\linewidth]{}
+\makebox[\linewidth]{}\makebox[\linewidth]{}\makebox[\linewidth]{}
+\makebox[\linewidth]{}\makebox[\linewidth]{}\makebox[\linewidth]{}
+\makebox[\linewidth]{}\makebox[\linewidth]{}\makebox[\linewidth]{}
+
+\subsubsection{Barometro Smatphone\\} 
+\makebox[\linewidth]{}
+\begin{minipage}{\linewidth}
+\begin{center}
+\includegraphics[width=160mm, height= 80mm]{./images/registrazione_tesi/pressure_watch.jpg} 
+\captionof{figure}{Segnale barometrico dello smartphone.\\}
+\end{center}
+\end{minipage}
+
+\clearpage
+
+% ---- GRAFICI ACCELEROMETRO OROLOGIO ------
+\subsubsection{Accelerometro Smartwatch}
+\begin{minipage}{\linewidth}
+\begin{center}
+\includegraphics[width=160mm, height= 70mm]{./images/registrazione_tesi/accelerometrXYZ.jpg} 
+\captionof{figure}{Grafico accelerometro triassiale dello smartwatch.\\}
+\end{center}
+\end{minipage}
+\makebox[\linewidth]{}
+\makebox[\linewidth]{}\makebox[\linewidth]{}\makebox[\linewidth]{}
+\makebox[\linewidth]{}\makebox[\linewidth]{}\makebox[\linewidth]{}
+\makebox[\linewidth]{}\makebox[\linewidth]{}\makebox[\linewidth]{}
+
+% ---- X -----
+\begin{minipage}{\linewidth}
+\begin{center}
+\includegraphics[width=154mm, height= 40mm]{./images/registrazione_tesi/accX.jpg} 
+\end{center}
+\end{minipage}
+\makebox[\linewidth]{}
+
+% ---- Y -----
+\begin{minipage}{\linewidth}
+\begin{center}
+\includegraphics[width=154mm, height= 40mm]{./images/registrazione_tesi/accY.jpg} 
+\end{center}
+\end{minipage}
+\makebox[\linewidth]{}
+
+% ---- z -----
+\begin{minipage}{\linewidth}
+\begin{center}
+\includegraphics[width=154mm, height= 40mm]{./images/registrazione_tesi/accZ.jpg} 
+\captionof{figure}{Scomposizione del segnale accelerometrico triassiale in tre grafici.\\}
+\end{center}
+\end{minipage}
+\makebox[\linewidth]{}
+\makebox[\linewidth]{}\makebox[\linewidth]{}\makebox[\linewidth]{}
+\makebox[\linewidth]{}\makebox[\linewidth]{}\makebox[\linewidth]{}
+
+% ---- GRAFICI ACCELEROMETRO TELEFONO------
+\subsubsection{Accelerometro Smartphone}
+\begin{minipage}{\linewidth}
+\begin{center}
+\includegraphics[width=160mm, height= 70mm]{./images/registrazione_tesi/acc_ph.jpg} 
+\captionof{figure}{Grafico accelerometro triassiale dello smartphone.\\}
+\end{center}
+\end{minipage}
+\makebox[\linewidth]{}
+\makebox[\linewidth]{}\makebox[\linewidth]{}\makebox[\linewidth]{}
+\makebox[\linewidth]{}\makebox[\linewidth]{}\makebox[\linewidth]{}
+\makebox[\linewidth]{}\makebox[\linewidth]{}\makebox[\linewidth]{}
+
+% ---- X -----
+\begin{minipage}{\linewidth}
+\begin{center}
+\includegraphics[width=154mm, height= 40mm]{./images/registrazione_tesi/acc_phX.jpg} 
+\end{center}
+\end{minipage}
+\makebox[\linewidth]{}
+
+% ---- Y -----
+\begin{minipage}{\linewidth}
+\begin{center}
+\includegraphics[width=154mm, height= 40mm]{./images/registrazione_tesi/acc_phY.jpg} 
+\end{center}
+\end{minipage}
+\makebox[\linewidth]{}
+
+% ---- z -----
+\begin{minipage}{\linewidth}
+\begin{center}
+\includegraphics[width=154mm, height= 40mm]{./images/registrazione_tesi/acc_phZ.jpg} 
+\captionof{figure}{Scomposizione del segnale accelerometrico triassiale in tre grafici.\\}
+\end{center}
+\end{minipage}
+\makebox[\linewidth]{}
+
+
+
+% ---- GRAFICI MAGNETOMETRO ------
+\subsubsection{Magnetometro}
+
+% ---- GRAFICI GIROSCOPIO ------
+\subsubsection{Giroscopio}
+
+% ----- IL PROBLEMA DEGLI OUTLIER -----
+\subsection{Il problema degli outlier}
+Un problema che si riscontra dalla fase precedente è la presenza di outlier: sample caratterizzato da un valorie non appartenente ad un intervallo di valori attesi e numericamente distanti dal resto dei dati raccolti. \\
+
+\begin{minipage}{\linewidth}
+\begin{center}
+\includegraphics[width=154mm, height= 40mm]{./images/registrazione_tesi/outliers.jpg} 
+\captionof{figure}{Grafico accelerometro asse X dello smartwatch.\\}
+\end{center}
+\end{minipage}
+\makebox[\linewidth]{}
+
+Costruendo il grafico del segnale si nota questi valori inattesi daii picchi che non permettono una scala ragionevolmente visualizzabile <- TODO
 
 % ----- ANALISI SEGNALE BAROMETRICO -----
 \subsection{Il segnale barometrico per rilevare la manovra}
-La prima fase di analisi ha previsto la visualizzazione dei grafici dei segnali risultanti dalle rilevazioni degli otto sensori.\\ Il sensore che dà maggiori informazioni sul momento in cui avviene l’abbassamento è il barometro dell'orologio; nel grafico, infatti, si nota che in corrispondenza di un abbassamento si ha un innalzamento della pressione atmosferica del barometro, con un conseguente abbassamento quando ci si alza nuovamente.\\
+
+
+Il sensore che dà maggiori informazioni sul momento in cui avviene l’abbassamento è il barometro dell'orologio; nel grafico, infatti, si nota che in corrispondenza di un abbassamento si ha un innalzamento della pressione atmosferica del barometro, con un conseguente abbassamento quando ci si alza nuovamente.\\
 L’elevato livello di rumore bianco di questo segnale rende difficile il compito di trovare delle regole generali per individuare algoritmicamente il momento in cui la persona si abbassa. \\
 Inoltre, il sensore è affetto da disturbi che possono influenzare l’andamento del segnale (es. correnti d’aria o le variazioni di pressione generate dall’aprire o chiudere una finestra).
-
 \makebox[\linewidth]{}
 \makebox[\linewidth]{}
 \begin{minipage}{\linewidth}
 \begin{center}
-\includegraphics[width=160mm,scale=0.7]{./images/segnali/pressure_phone_grezzo.png} 
-\captionof{figure}{Segnale barometrico grezzo dello smartwatch.\\}
+\includegraphics[width=160mm, height= 60mm]{./images/registrazione_tesi/pressure_watch.jpg} 
+\captionof{figure}{Segnale barometrico dello smartphone.\\}
 \end{center}
 \end{minipage}
 \makebox[\linewidth]{}
-\makebox[\linewidth]{} 
 \makebox[\linewidth]{} 
 %--
 Per rendere più agevole la visualizzazione è opportuno applicare al segnale di partenza opportuni filtri. In particolare facendo vari tentativi, si giunge alla conclusione che, per ottenere una buonissima replica del segnale pulita e più lineare, si possono applicare un filtro a media mobile, seguito da un filtro gaussiano.
@@ -275,7 +417,7 @@ Il seguente codice Matlab applica al segnale di partenza i due filtri, producend
 
 \clearpage
 
-% ----- SVILUPPO APPLICAZIONE REALTIME -----
+% ----- CAPITOLO V : Sviluppo applicazione realtime -----
 \section{Sviluppo Applicazione Realtime}
 Durante la fase finale è stato realizzato un sistema per il monitoraggio della movimentazione in tempo reale, seguendo i medesimi passaggi compiuti nella fase di analisi (vedi paragrafo 4). Infatti, anche questa fase, è divisa in due parti: l'individuazione degli istanti in cui sono state compiute le manovre, seguita dalla classificazione di queste ultime.\\
 In realtà non è propriamente corretto definire questa applicazione realtime, in quanto la rilevazione non è immediata, ma si presenta un tempo di latenza dovuto principalmente all'aplicazione di filtri al segnale grezzo. Come spiegato nei paragrasfi successivi, al segnale registrato, vengono applicati due filtri a media mobile: in questo tipo di filtro si considera un certo numero di campioni N, detto FINESTRA, per calcolare il valore del segnale ad un determinato passo; dunque è neccessario aver collezionato gli N/2 campioni precedenti e gli N/2 successivi. Se considerando che vengono applicati due filtri di questa tipologia in cascata, sono neccessari un numero "elevato" di campioni futuri, per calcolare il valore del segnale ad un istante precedente.\\
@@ -310,7 +452,7 @@ Questa progedura ha come inconveniente la generazione di codice ridondante, per 
 \subsubsection{Memorizzazione dei segnali e valutazione delle lunghezze dei buffer}
 Il secondo passo da compiere, per realizzare questo modulo, è lo storage dei campioni che descrivono un certo segnale. Non potendo mantere in memoria tutto il segnale registrato dal barometro, perchè potenzialmente infinito, è molto importante definire la quantità di campioni che possiamo memorizzare, per questioni legate principalmente alle risorse limitate dei dispositivi di cui ci siamo dotati. \\
 Per questa parte di modulo è necessario mantenere in memoria tre buffer, uno per il segnale grezzo \textit{noisy\_signal}, uno per il segnale a cui viene applicato il primo filtro \textit{movmean\_signal} e l'ultimo per il segnale pulito finale \textit{gaussian\_signal}. In particolare la scelta che è stata fatta è di 50 campioni per il primo segnale, poichè la frequenza di campionamento è di 50 Hz, e di 100 campioni per quanto riguarda i secondi due segnali, poichè dalla fase di analisi si può notare che il compimento di un abbassamento, corrisponde a circa 100 campioni del segnale barometrico dello smartwatch. Questi variabili costanti possono essere soggette a modifiche, in quanto valutate euristicamente, in particolare la dimensione dei secondi due buffer; dunque compiendo uno studio in futuro più dettagliato sulle modalità e i tempi, con cui può essere compiuto questo task, si possono modificare queste dimensioni, in modo da migliorare i risultati. \\
-\input{./java_code/final_project_variables.tex}
+\input{./java_code/final_project_variables.tex} 
 Ioltre per ognuno dei precedenti segnali, viene memorizzato un array della stessa dimensione, per i timestamp: stesso indice descrive valore e istante di tempo dello stesso campione: \textit{ArrayList<Long> noisy\_signal\_timestamp; ArrayList<Long> movmean\_signal\_timestamp; ArrayList<Long> gaussian\_signal\_timestamp;}
 
 % ----- IMPLEMENTAZIONE FILTRI ------
