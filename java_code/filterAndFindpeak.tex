@@ -1,0 +1,48 @@
+% ----- android mobile module -----
+\begin{lstlisting}[language=Java,  basicstyle=\footnotesize]
+
+    case 6:
+        noisy_signal.addLast(event.values[0]);
+        noisy_signal_timestamp.addLast(event.timestamp);
+        counter++;
+
+
+        if(counter == WINDOW_SIZE){
+            for(Float f : noisy_signal)
+                media += f;
+            media /= WINDOW_SIZE;
+        }
+
+        if(counter > WINDOW_SIZE){
+
+            Float removed = noisy_signal.removeFirst();
+            noisy_signal_timestamp.removeFirst();
+            media = media + ((event.values[0] - removed) / WINDOW_SIZE);
+
+            movmean_signal.addLast(media);
+            movmean_signal_timestamp.addLast(noisy_signal_timestamp.get
+                                                        (WINDOW_SIZE/2));
+
+            temp += media;
+            if((counter \% FINDPEAK_WINDOW) == 0) {
+                temp /= FINDPEAK_WINDOW;
+                avg_array.addLast(temp);
+                temp = 0.0f;
+            }
+            if(counter > MOVMEAN_WINDOW_SIZE + WINDOW_SIZE){
+                movmean_signal.removeFirst();
+                Long time = movmean_signal_timestamp.removeFirst();
+                resize_windows(time);
+
+                if((counter \% FINDPEAK_WINDOW) == 0)
+                    avg_array.removeFirst();
+
+                boolean peak = findPeak(avg_array);
+
+                if(peak){
+                    Log.i("PEAK", "TROOOOOOOOOOOOOOVATOOOOOOO");
+                }
+            }
+        }
+        break;
+\end{lstlisting}

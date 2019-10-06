@@ -1,42 +1,42 @@
 % -----variabili per il progetto realtime -----
 \begin{lstlisting}[language=Java,  basicstyle=\footnotesize]
- 	 if(event.sensor.getType() == 6){ // PRESSURE
+  if(event.sensor.getType() == 6){ // PRESSURE
 
-            noisy_signal.add(event.values[0]);
-            noisy_signal_timestamp.add(event.timestamp);
-            counter++;
+    noisy_signal.add(event.values[0]);
+    noisy_signal_timestamp.add(event.timestamp);
+    counter++;
 
-            if(counter == WINDOW_SIZE){
-                for(Float f : noisy_signal)
-                    media += f;
-                media /= WINDOW_SIZE;
-            }
+    if(counter == WINDOW_SIZE){
+        for(Float f : noisy_signal)
+            media += f;
+        media /= WINDOW_SIZE;
+    }
 
-            if(counter > WINDOW_SIZE){
+    if(counter > WINDOW_SIZE){
 
-                Float removed = noisy_signal.remove(0);
-                noisy_signal_timestamp.remove(0);
-                media = media + ((event.values[0] - removed) / WINDOW_SIZE);
+        Float removed = noisy_signal.remove(0);
+        noisy_signal_timestamp.remove(0);
+        media = media + ((event.values[0] - removed) / WINDOW_SIZE);
 
-                movmean_signal.add(media);
-                movmean_signal_timestamp.add(noisy_signal_timestamp.get(WINDOW_SIZE/2));
+        movmean_signal.add(media);
+        movmean_signal_timestamp.add(noisy_signal_timestamp.get(WINDOW_SIZE/2));
 
-                if(counter >  GAUSSIAN_WINDOW_SIZE + WINDOW_SIZE){
-                    movmean_signal.remove(0);
-                    movmean_signal_timestamp.remove(0);
+        if(counter >  GAUSSIAN_WINDOW_SIZE + WINDOW_SIZE){
+            movmean_signal.remove(0);
+            movmean_signal_timestamp.remove(0);
 
-                    Float fl = gaussian_average(movmean_signal);
+            Float fl = gaussian_average(movmean_signal);
 
 
-                    gaussian_signal.add(fl);
-                    gaussian_signal_timestamp.add(movmean_signal_timestamp.get...
-							...(GAUSSIAN_WINDOW_SIZE / 2));
+            gaussian_signal.add(fl);
+            gaussian_signal_timestamp.add(movmean_signal_timestamp.get...
+					...(GAUSSIAN_WINDOW_SIZE / 2));
 
-                    if(counter >  WINDOW_SIZE + GAUSSIAN_WINDOW_SIZE + PORTION_OF_SIGNAL){
-                        gaussian_signal.remove(0);
-                        gaussian_signal_timestamp.remove(0);
-                    }
-                }
+            if(counter >  WINDOW_SIZE + GAUSSIAN_WINDOW_SIZE + PORTION_OF_SIGNAL){
+                gaussian_signal.remove(0);
+                gaussian_signal_timestamp.remove(0);
             }
         }
+    }
+}
 \end{lstlisting}

@@ -49,8 +49,8 @@ spostare un carico, che, per le loro caratteristiche o in conseguenza delle
 condizioni ergonomiche sfavorevoli, comportano rischi di patologie da
 sovraccarico biomeccanico, in particolare dorso-lombari ”.} \\ \\
 \end{addmargin}
-Questa è la definizione di Movimentazione Manuale dei Carichi o MMC (o, in inglese, Manual Handlng of Loads, MHL), data dall'articolo 167, decreto legislativo 81/08. \\ Queste manovre, svolte quotidianamente da operai sul posto di lavoro, rappresentano una delle cause che favoriscono l’insorgere di disturbi e patologie alla colonna vertebrale. Infatti, se consideriamo i dati provenienti dagli enti di previdenza sociale relativi al tipo e ai numeri degli infortuni sul lavoro e delle malattie professionali, questi evidenziano come, a livello mondiale, a prevalere siano malattie professionali classificabili come disturbi Muscolo-Scheletrici. \\
-Dalle statistiche emerge quanto i rischi derivanti da MMC siano un problema su molteplici fronti, nonostante l'introduzione di normative, che negli anni hanno posto sempre più attenzione alla tutela dei lavoratori, oltre a sensibilizzare i datori di lavoro e sullo standardizzare il modo in cui si svolge la mansione. \\
+Questa è la definizione di Movimentazione Manuale dei Carichi MMC (o, in inglese, Manual Handlng of Loads, MHL), data dall'articolo 167, decreto legislativo 81/08. \\ Queste manovre, svolte quotidianamente da operai sul posto di lavoro, rappresentano una delle cause che favoriscono l’insorgere di disturbi e patologie alla colonna vertebrale. Infatti, se consideriamo i dati provenienti dagli enti di previdenza sociale relativi al tipo e ai numeri degli infortuni sul lavoro e delle malattie professionali, questi evidenziano come, a livello mondiale, a prevalere siano malattie professionali classificabili come disturbi Muscolo-Scheletrici. \\
+Dalle statistiche emerge quanto i rischi derivanti da MMC siano un problema su molteplici fronti, nonostante l'introduzione di normative, che negli anni hanno posto sempre più attenzione alla tutela dei lavoratori, oltre a sensibilizzare i datori di lavoro e standardizzare il modo in cui si svolge la mansione. \\
 Il D.Lgs. 81/08, nell’allegato XXIII, introduce metodi di valutazione del rischio, presentati nella norma ISO-11228, redatta a seguito di studi effettuati dal NIOSH (National Institute for Occupational Safety and Health Administration), l’agenzia federale statunitense che si occupa di ricerca e formulazione di raccomandazioni per prevenire infortuni e malattie sul lavoro. \\
 Tale norma è divisa in tre parti, una per ogni tipologia di movimentazione dei carichi, nello specifico:
 \begin{itemize}
@@ -59,9 +59,9 @@ Tale norma è divisa in tre parti, una per ogni tipologia di movimentazione dei 
 \item Maneggiare carichi leggeri ad alta frequenza;
 \end{itemize}
 Questa tesi si concentra sulla parte di sollevamento dei carichi. \\ \\
-In generale, si rende necessario, quindi, procedere ad una corretta valutazione del rischio da movimentazione manuale di carichi, al fine di attuare idonei interventi di prevenzione e protezione che vadano a mitigare, se non annullare, eventuali danni a carico degli operatori. Considerando poi che quasi un terzo dei lavoratori dichiara di svolgere quotidianamente questo tipo di operazione, è lecito pensare che, avere uno strumento capace di analizzare il modo in cui si effettua questo task, potrebbe permettere di comprendere il problema più a fondo e cercare una soluzione mirata.\\
-L'obiettivo finale è, quindi, lo sviluppo di uno strumento, che monitori costantemente, durante la giornata lavorativa, i movimenti di un operatore e valuti il rischio a cui si espone, compiendo determinati operazioni, al fine di poter correggere gli errori compiuti duramtne l'esecuzione e trovare soluzioni ergonomiche atte a migliorare la qualità e l'ambiente lavorativo.\\ \\
-Lo scopo di questa tesi è analizzare i movimenti compiuti durante il \textbf{sollevamento di un carico elevato} mediante dispositivi indossabili, che contengono al loro interno sensori, da cui raccogliere dati, per poi analizzarli in un secondo momento, al fine di capire se i dispositivi hardware, utilizzati nella prima fase di storage dei dati, sono sufficienti a distinguere una operazione eseguita in modo corretto, da una eseguita scorrettamente e che potrebbe causare lesioni. Questa analisi deve gettare le basi per poter realizzare uno strumento che, in tempo reale, possa avvisare un utente, ogni qual volta compia una manovra potenzialmente dannosa.
+In generale, si rende necessario quindi, procedere ad una corretta valutazione del rischio da movimentazione manuale di carichi, al fine di attuare idonei interventi di prevenzione e protezione che vadano a mitigare, se non annullare, eventuali danni a carico degli operatori. Considerando poi che quasi un terzo dei lavoratori dichiara di svolgere quotidianamente questo tipo di operazione, è lecito pensare che, avere uno strumento capace di analizzare il modo in cui si effettua questo task, potrebbe permettere di comprendere il problema più a fondo e cercare una soluzione mirata.\\
+L'obiettivo finale è, quindi, lo sviluppo di uno strumento, che monitori costantemente i movimenti di un lavoratore e valuti il rischio a cui si espone, compiendo determinati mansioni; al fine di poter correggere gli errori compiuti durante l'esecuzione e trovare soluzioni ergonomiche atte a migliorare la qualità e l'ambiente lavorativo.\\ \\
+Lo scopo di questa tesi è analizzare i movimenti compiuti durante il \textbf{sollevamento di un carico elevato} mediante dispositivi indossabili, che contengono al loro interno sensori da cui raccogliere dati, che verranno analizzati in un secondo momento, per capire se i dispositivi hardware, utilizzati nella prima fase di storage dei dati, sono sufficienti a distinguere un' operazione eseguita in modo corretto, da una eseguita scorrettamente e che potrebbe causare lesioni. Questa analisi deve gettare le basi per poter realizzare uno strumento che, in tempo reale, possa avvisare un utente, ogni qual volta compia una manovra potenzialmente dannosa.
 
 
 	\clearpage
@@ -69,9 +69,9 @@ Lo scopo di questa tesi è analizzare i movimenti compiuti durante il \textbf{so
 % ------ CAPITOLO II : descrizione movimento ------
 	\section{Movimentazione}
 
-In prima battuta è fondamentale comprendere come debba essere compiuto il task del sollevamento; in modo da poter effettuare una fase di farmazione al personale, che durante la giornata lavorativa si trova a dover affrontare il movimento considerato. 
+In prima battuta è fondamentale comprendere come debba essere compiuto il task del sollevamento;con lo scopo di formare il personale, che durante la giornata lavorativa si trova a dover affrontare il movimento considerato. 
 	\subsection{Movimento corretto}
-Al fine di evitare infortuni e minimizzare l'indice di rischio, il modo corretto, per sollevare un carico, è piegare le gambe, mantenendole leggermente divaricate, all'altezza delle spalle e, mantenendo un’inclinazione lieve e costante del busto verso il carico, il quale deve essere posizionato alla minore distanza possibile dai piedi (circa 10 cm), tornare in posizione eretta facendo forza principalmente sulle gambe. \\ L'immagine di seguito riportata illustra i passaggi da seguire per un corretto sollevamento.\\
+Il modo corretto, al fine di evitare infortuni e minimizzare l'indice di rischio durante il compimento del task critico, è piegare le gambe, mantenendole leggermente divaricate, all'altezza delle spalle e, mantenendo un’inclinazione lieve e costante del busto verso il carico, il quale deve essere posizionato alla minore distanza possibile dai piedi (circa 10 cm), tornare in posizione eretta facendo forza principalmente sulle gambe. \\ L'immagine di seguito riportata, illustra i passaggi da seguire per un corretto sollevamento.\\
 
 \makebox[\linewidth]{}
 \begin{center}
@@ -85,7 +85,7 @@ Al fine di evitare infortuni e minimizzare l'indice di rischio, il modo corretto
 \makebox[\linewidth]{}
 
 \subsection{Movimento scorretto}
-Un esempio di un modo scorretto di sollevare un carico è invece illustrato nella seguente figura, dove non si utilizzano le gambe, che rimangono stese durante tutta l'esecuzione della manovra, per aiutarsi nella distribuzione del peso, ma ci si piega con la sola schiena, esponendola di fatto a un alto rischio di disturbi dovuti a sovraccarico biomeccanico delle vertebre e dei dischi intervertebrali. Tale movimento è da evitare in tutti i modi. \\
+	Un modo scorretto di sollevare un carico è invece illustrato nella seguente figura, dove non si utilizzano le gambe, che rimangono stese durante tutta l'esecuzione della manovra, per aiutarsi nella distribuzione del peso, ma ci si piega con la sola schiena, esponendola di fatto a un alto rischio di disturbi dovuti a sovraccarico biomeccanico delle vertebre e dei dischi intervertebrali. Tale movimento è assolutamente da evitare. \\
 
 \makebox[\linewidth]{}
 \begin{center}
@@ -104,14 +104,14 @@ Un esempio di un modo scorretto di sollevare un carico è invece illustrato nell
 % ----- CAPITOLO III : raccolta dati -------
 	\section{Raccolta dati}
 Per poter eseguire uno studio del rischio che corre una persona, sollevando un carico elevato, si affronta una prima fase in cui si raccolgono i dati relativi alla movimentazione di quest'ultima. \\
-Dunque si rende necessario uno strumento che permetta di raccogliere e catalogare informazioni, con cui poter ricostruire il movimento e in una seconda fase eseguire un analisi per poter quantificare il rischio. \\
+Dunque si rende necessario uno strumento che permetta di raccogliere e catalogare informazioni, con cui poter ricostruire il movimento e, in uno step successivo, eseguire un' analisi per poter quantificare il rischio. \\
 
 
 
 	\subsection{Sistema per la raccolta ed il salvataggio di dati}
 
 
-Il sistema di cui ci muniremo dovrà contenere al suo interno sensori di vario genere, che gli permettano di registrare i movimenti e le variazioni delle condizioni ambientali esterne, a cui è sottoposto. \\
+Il sistema, di cui occore munirsi, dovrà contenere al suo interno sensori di vario genere, che gli permettano di registrare i movimenti e le variazioni delle condizioni ambientali esterne, a cui è sottoposto. \\
 I sensori che prenderemo in considerazione, di cui l'hardware dovrà essere munito, sono i seguenti:
 \begin{itemize}
 \item \textbf{Accelerometro triassiale}, misura l’accelerazione che subisce il dispositivo sui tre assi cardinali.
@@ -405,17 +405,20 @@ Matlab mette a disposizione la funzione \textit{plot} per poter visualizzare gra
 
 % ----- IL PROBLEMA DEGLI OUTLIER -----
 \subsection{Il problema degli outlier}
-Un problema che si riscontra dalla fase precedente è la presenza di outlier: sample caratterizzato da un valorie non appartenente ad un intervallo di valori attesi e numericamente distanti dal resto dei dati raccolti. \\
-
+Un problema che si riscontra dalla fase precedente, è la presenza di outlier: sample caratterizzati da valori non appartenenti ad un intervallo di valori attesi e numericamente distanti dal resto dei dati raccolti.  \\
+I valori anomali possono avere molte cause, essendo dovuti a comportamenti fraudolenti del sistema: un apparato hardware per eseguire misurazioni potrebbe aver subito un malfunzionamento transitorio oppure potrebbe essersi verificato un errore nella trasmissione o trascrizione dei dati. \\
+% , e che dovrà essere affrontato in fase di progetto e sviluppo
 \begin{minipage}{\linewidth}
 \begin{center}
-\includegraphics[width=154mm, height= 40mm]{./images/registrazione_tesi/outliers.jpg} 
+\vspace{7mm}
+\includegraphics[width=154mm, height= 80mm]{./images/registrazione_tesi/outliers.jpg} 
 \captionof{figure}{Grafico accelerometro asse X dello smartwatch.\\}
-\vspace{8mm}
+\vspace{7mm}
 \end{center}
 \end{minipage}
 \makebox[\linewidth]{}
-Costruendo il grafico del segnale si nota questi valori inattesi daii picchi che non permettono una scala ragionevolmente visualizzabile <- TODO
+Costruendo il grafico dei segnali, è evidente la presenza di questi valori inattesi dai picchi che compaiono lungo il segnale, tali sample non permettono una scala ragionevolmente visualizzabile, per cui è neccessaria una fase di signal preprocessing, nella quale vengono eliminati questi campioni fuoriscala. \\
+Essendo gli outlier un numero irrisorio (3 sample per il grafico in figura 15), possiamo procedere ad una pulizia manuale del segnale, cercando dal grafico generato da matlab, gli indici corrispondenti ai campioni presi in esame ed in seguito eliminarli.
 
 % ----- ANALISI SEGNALE BAROMETRICO -----
 \subsection{Il segnale barometrico per rilevare la manovra}
@@ -446,7 +449,7 @@ Il seguente codice Matlab applica al segnale di partenza i due filtri, producend
 \makebox[\linewidth]{}
 \begin{minipage}{\linewidth}
 \begin{center}
-\includegraphics[width=160mm,scale=0.7]{./images/segnali/pressure_phone_movmean.png} 
+\includegraphics[width=160mm, height= 60mm]{./images/segnali/pressure_phone_movmean.png} 
 \captionof{figure}{Segnale barometrico a cui è stato applicato il filtro a media mobile.\\}
 \end{center}
 \end{minipage}
@@ -456,7 +459,7 @@ Il seguente codice Matlab applica al segnale di partenza i due filtri, producend
 \makebox[\linewidth]{}
 \begin{minipage}{\linewidth}
 \begin{center}
-\includegraphics[width=160mm,scale=0.2]{./images/segnali/pressure_phone_gauss.png} 
+\includegraphics[width=160mm, height= 60mm]{./images/segnali/pressure_phone_gauss.png} 
 \captionof{figure}{Segnale barometrico a cui sono stati applicati i filtri a media mobile e gaussiano.\\}
 \end{center}
 \end{minipage}
@@ -501,15 +504,51 @@ Questa progedura ha come inconveniente la generazione di codice ridondante, per 
 Il secondo passo da compiere, per realizzare questo modulo, è lo storage dei campioni che descrivono un certo segnale. Non potendo mantere in memoria tutto il segnale registrato dal barometro, perchè potenzialmente infinito, è molto importante definire la quantità di campioni che possiamo memorizzare, per questioni legate principalmente alle risorse limitate dei dispositivi di cui ci siamo dotati. \\
 Per questa parte di modulo è necessario mantenere in memoria tre buffer, uno per il segnale grezzo \textit{noisy\_signal}, uno per il segnale a cui viene applicato il primo filtro \textit{movmean\_signal} e l'ultimo per il segnale pulito finale \textit{gaussian\_signal}. In particolare la scelta che è stata fatta è di 50 campioni per il primo segnale, poichè la frequenza di campionamento è di 50 Hz, e di 100 campioni per quanto riguarda i secondi due segnali, poichè dalla fase di analisi si può notare che il compimento di un abbassamento, corrisponde a circa 100 campioni del segnale barometrico dello smartwatch. Questi variabili costanti possono essere soggette a modifiche, in quanto valutate euristicamente, in particolare la dimensione dei secondi due buffer; dunque compiendo uno studio in futuro più dettagliato sulle modalità e i tempi, con cui può essere compiuto questo task, si possono modificare queste dimensioni, in modo da migliorare i risultati. \\
 \input{./java_code/final_project_variables.tex} 
+\vspace{3mm}
 Ioltre per ognuno dei precedenti segnali, viene memorizzato un array della stessa dimensione, per i timestamp: stesso indice descrive valore e istante di tempo dello stesso campione: \textit{ArrayList<Long> noisy\_signal\_timestamp; ArrayList<Long> movmean\_signal\_timestamp; ArrayList<Long> gaussian\_signal\_timestamp;}
 
 % ----- IMPLEMENTAZIONE FILTRI ------
-\subsubsection{Implementazione Filtri}
+\subsubsection{Implementazione filtri}
+\vspace{2mm}
 \input{./java_code/final_project_filters.tex}
+\vspace{5mm}
+
+% ----- TESTING MODULO DETECTION -> il fallimento :'D ------
+\subsubsection{Testing modulo detection}
+In questa fase è emersa l'impossibilità di poter realizzare il modulo di rilevazione della manovra, come descritto nel paragrafo 5.1.2, poichè l'applicazione di 3 filtri in cascata è un'oprazione di complessità, sia temporale che spaziale, non indifferente, per cui l'orologio non riesce a stare al passo del calcolo del segnale filtrato con l'arrivo dei campioni dai vari sensori. In particolare eseguendo l'applicazione in modalità debug e andando a leggere lo stacktrace, si può notare come l'esecuzione del Garbage-Collector (un thread Daemon che sta in esecuzione in background, che si occupa della gestione della memoria) non permetta al Main-thread di mantere traccia dei campioni e di calcolarne il sengale pulito.
+
+% ----- SECONDA IMPLEMENTAZIONE FILTRI ------
+\subsubsection{Seconda implementazione filtri}
+In questa parte dello sviluppo dell'applicazione si è reso necessario riprogettare il modulo della detection in modo che non sia computazionalmente pesante per smartwatch: lo smoothing del segnale viene fatto solamente con un filtro a media mobile. \\
+La rilevazione del picco e dunque dell'abbassamento, invece, viene fatta eseguendo un'analisi dell'andamento del segnale filtrato: data una finestra si campioni, si divide quest'ultima in 10 sottofinstre e per ciascuna si calcola la media, dopo di che si verifica che i primi 5 valor medi abbiano un andamento crescente, metre i secondi 5 un andamento decrescente; la verifica di questa condizione implica la presenza di un abbassamento. In generale questo approccio per la verifica dell'abbassamento, è sviluppato sulla falsa riga della media mobile, perchè stiamo descrivendo il segnale, mediante la media tra un sottinsime di campioni.
+\vspace{2mm}
+\input{./java_code/filterAndFindpeak.tex}
+\vspace{2mm}
+% ----- TESTING SECONDA IMPLEMENTAZIONE MODULO DETECTION ------
+\subsubsection{Testing seconda implementazione modulo detection}
+Durante la fase di testing della seconda implementazione si riscontra che il problema della scarsa potenza di calcolo dello smartwatch è risolto e che l'applicazione viene eseguita senza interruzioni o crash. \\
+E' stato possibile, dunque, effettuare alcune simulazioni di abbasamento e raccolta di un oggetto da terra, per vedere se il sistema è in grado di comprendere se, chi indossa i dispositivi, ha effettivamente compiuto la manovra potenzialmente critica.\\
+Dai risultati delle simulazioni, è emerso che il sistema realizzato è in grado di rilevare circa il 68\% degli abbasamenti. Ponendo attenzione agli abbassamenti non rilevati e interrogandosi sul motivo di questa mancanza, si nota che le manovre, di cui l'applicazione non è riuscita a fare la detection, sono quelle in cui l'utilizzatore è rimasto abbassato per più tempo, facendo durare la manovra più tempo: le manovre compiute in 2 sec / 2.5 sec. vengono indentificate, mentre gli abbasamenti compiuti in un tempo maggiore di 2.5 sec passano inosservati. \\
+Per poter effettuare dei miglioramenti nei risultati ottenuti, sarebbe opportuno effettuare altre simulazioni, coinvolgendo più persone con differenti caratteristiche fisiche (altezza, età, sesso, ecc.), il cui obbiettivo è trovare la dimensione della finestra, e dunque il numero si sample, che megliono descrivono la manovra e grazie al quale viene minimizzato il numero di task non rilevati, così da poter cambiare il parametro constante \textit{static final int MOVMEAN\_WINDOW\_SIZE} ed ottenere un maggiore gradi di precisione.
+\clearpage
+% ----- CAPITOLO VI : conclusioni -----
+	\section{Conclusione}
+
+
+\clearpage
+% ----- SITOGRAFIA -----
+	\section{Sitografia}
+
+\begin{itemize}
+\item Documentazione Android, \textit{https://developer.android.com/docs}
+\item Documentazione java Oracle, \textit{https://docs.oracle.com/en/java/index.html}
+\item Documentazione Matlab, \textit{https://it.mathworks.com/}
+\item Wikipedia, \textit{https://en.wikipedia.org/wiki/Main\_Page}
+\end{itemize}
+
+
 
 
 \end{document}
-
-
 
 
