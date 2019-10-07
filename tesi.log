@@ -1,27 +1,29 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.7.22)  6 OCT 2019 16:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.7.22)  7 OCT 2019 09:10
 entering extended mode
 **./tesi.tex
 (tesi.tex
 LaTeX2e <2018-12-01>
-("C:\Users\Marco\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\article.cls"
-Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
-("C:\Users\Marco\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\size10.clo"
-File: size10.clo 2018/09/03 v1.4i Standard LaTeX file (size option)
+("C:\Users\Marco\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\book.cls"
+Document Class: book 2018/09/03 v1.4i Standard LaTeX document class
+("C:\Users\Marco\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\bk10.clo"
+File: bk10.clo 2018/09/03 v1.4i Standard LaTeX file (size option)
 )
 \c@part=\count80
-\c@section=\count81
-\c@subsection=\count82
-\c@subsubsection=\count83
-\c@paragraph=\count84
-\c@subparagraph=\count85
-\c@figure=\count86
-\c@table=\count87
+\c@chapter=\count81
+\c@section=\count82
+\c@subsection=\count83
+\c@subsubsection=\count84
+\c@paragraph=\count85
+\c@subparagraph=\count86
+\c@figure=\count87
+\c@table=\count88
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
-) ("C:\Users\Marco\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\fontenc.sty
-"
+)
+("C:\Users\Marco\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\fontenc.sty"
 Package: fontenc 2018/08/11 v2.0j Standard LaTeX package
+
 ("C:\Users\Marco\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\t1enc.def"
 File: t1enc.def 2018/08/11 v2.0j Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
@@ -51,21 +53,21 @@ Language: italian 2019/01/05 v.1.4.01 Italian support for the babel system
 
 ("C:\Users\Marco\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\babel.def"
 File: babel.def 2019/06/03 3.32 Babel common definitions
-\babel@savecnt=\count88
+\babel@savecnt=\count89
 \U@D=\dimen103
 
 ("C:\Users\Marco\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\txtbabel.d
 ef")
-\bbl@dirlevel=\count89
+\bbl@dirlevel=\count90
 )
-\it@lettering=\count90
-\it@doublequoteactive=\count91
-\it@ISOcompliance=\count92
+\it@lettering=\count91
+\it@doublequoteactive=\count92
+\it@ISOcompliance=\count93
 ))
 ("C:\Users\Marco\AppData\Local\Programs\MiKTeX 2.9\tex/latex/etoolbox\etoolbox.
 sty"
 Package: etoolbox 2018/08/19 v2.5f e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count93
+\etb@tempcnta=\count94
 )
 ("C:\Users\Marco\AppData\Local\Programs\MiKTeX 2.9\tex/latex/frontespizio\front
 espizio.sty"
@@ -141,24 +143,24 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \openout3 = `tesi-frn.tex'.
 
 ) (listings.sty
-\lst@mode=\count94
+\lst@mode=\count95
 \lst@gtempboxa=\box29
 \lst@token=\toks19
-\lst@length=\count95
+\lst@length=\count96
 \lst@currlwidth=\dimen106
-\lst@column=\count96
-\lst@pos=\count97
+\lst@column=\count97
+\lst@pos=\count98
 \lst@lostspace=\dimen107
 \lst@width=\dimen108
-\lst@newlines=\count98
-\lst@lineno=\count99
+\lst@newlines=\count99
+\lst@lineno=\count100
 \lst@maxwidth=\dimen109
 
 ("C:\Users\Marco\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\lstmisc.s
 ty"
 File: lstmisc.sty 2019/02/27 1.8b (Carsten Heinz)
-\c@lstnumber=\count100
-\lst@skipnumbers=\count101
+\c@lstnumber=\count101
+\lst@skipnumbers=\count102
 \lst@framebox=\box30
 )
 ("C:\Users\Marco\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\listings.
@@ -195,9 +197,9 @@ sty"
 Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
 )
-\Gm@cnth=\count102
-\Gm@cntv=\count103
-\c@Gm@tempcnt=\count104
+\Gm@cnth=\count103
+\Gm@cntv=\count104
+\c@Gm@tempcnt=\count105
 \Gm@bindingoffset=\dimen110
 \Gm@wd@mp=\dimen111
 \Gm@odd@mp=\dimen112
@@ -226,8 +228,8 @@ Package caption3 Info: TeX engine: e-TeX on input line 64.
 \caption@parindent=\dimen123
 \caption@hangindent=\dimen124
 )
-\c@caption@flags=\count105
-\c@ContinuedFloat=\count106
+\c@caption@flags=\count106
+\c@ContinuedFloat=\count107
 Package caption Info: listings package is loaded.
 ) (tesi.aux)
 \openout1 = `tesi.aux'.
@@ -250,16 +252,16 @@ LaTeX Info: Redefining \it@ccap on input line 13.
 ("C:\Users\Marco\AppData\Local\Programs\MiKTeX 2.9\tex/context/base/mkii\supp-p
 df.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count107
+\scratchcounter=\count108
 \scratchdimen=\dimen125
 \scratchbox=\box31
-\nofMPsegments=\count108
-\nofMParguments=\count109
+\nofMPsegments=\count109
+\nofMParguments=\count110
 \everyMPshowfont=\toks21
-\MPscratchCnt=\count110
+\MPscratchCnt=\count111
 \MPscratchDim=\dimen126
-\MPnumerator=\count111
-\makeMPintoPDFobject=\count112
+\MPnumerator=\count112
+\makeMPintoPDFobject=\count113
 \everyMPtoPDFconversion=\toks22
 )
 ("C:\Users\Marco\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\epstopdf-
@@ -308,7 +310,7 @@ G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
 \AtBeginShipoutBox=\box32
-\c@lstlisting=\count113
+\c@lstlisting=\count114
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -326,13 +328,13 @@ G,.JBIG2,.JB2,.eps]
 * \textheight=671.5993pt
 * \oddsidemargin=14.45378pt
 * \evensidemargin=14.45378pt
-* \topmargin=-22.54622pt
+* \topmargin=-15.61371pt
 * \headheight=12.0pt
-* \headsep=25.0pt
+* \headsep=18.06749pt
 * \topskip=10.0pt
-* \footskip=30.0pt
-* \marginparwidth=57.0pt
-* \marginparsep=11.0pt
+* \footskip=25.29494pt
+* \marginparwidth=61.0pt
+* \marginparsep=7.0pt
 * \columnsep=10.0pt
 * \skip\footins=9.0pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
@@ -349,23 +351,28 @@ Package caption Info: End \AtBeginDocument code.
 <tesi-frn.pdf, id=1, 597.50829pt x 845.0471pt>
 File: tesi-frn.pdf Graphic file (type pdf)
 <use tesi-frn.pdf>
-Package pdftex.def Info: tesi-frn.pdf  used on input line 16.
+Package pdftex.def Info: tesi-frn.pdf  used on input line 18.
 (pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
 [1
 
+
+
  <./tesi-frn.pdf{C:/Users/Marco/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.m
-ap}>] (tesi.toc
+ap}>] [1
+
+
+] (tesi.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 5.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 5.
 
-Underfull \hbox (badness 10000) in paragraph at lines 18--18
+Underfull \hbox (badness 10000) in paragraph at lines 17--17
  []  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 19--19
+Underfull \hbox (badness 10000) in paragraph at lines 18--18
  []  
  []
 
@@ -373,141 +380,134 @@ Underfull \hbox (badness 10000) in paragraph at lines 19--19
 \tf@toc=\write4
 \openout4 = `tesi.toc'.
 
- [1]
-Underfull \hbox (badness 10000) in paragraph at lines 50--51
+ [2
+
+
+
+
+]
+Capitolo 1.
+
+Underfull \hbox (badness 10000) in paragraph at lines 64--65
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 50--51
+Underfull \hbox (badness 10000) in paragraph at lines 64--65
 
  []
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 57.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 71.
 ("C:\Users\Marco\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 57.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 71.
 
-Underfull \hbox (badness 10000) in paragraph at lines 61--65
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 61--65
-
- []
-
-[2
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 74--75
+Underfull \hbox (badness 10000) in paragraph at lines 75--79
 
  []
 
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 76--77
-[][] 
+Underfull \hbox (badness 10000) in paragraph at lines 75--79
+
  []
 
-<./images/sollevamento_corretto.png, id=36, 311.1625pt x 198.7425pt>
-File: ./images/sollevamento_corretto.png Graphic file (type png)
-<use ./images/sollevamento_corretto.png>
-Package pdftex.def Info: ./images/sollevamento_corretto.png  used on input line
- 79.
-(pdftex.def)             Requested size: 217.81226pt x 139.11879pt.
+[3
 
-Underfull \hbox (badness 10000) in paragraph at lines 79--81
-[][]
- []
 
+
+] [4]
+Capitolo 2.
 
 Underfull \hbox (badness 10000) in paragraph at lines 88--89
 
  []
 
+<./images/sollevamento_corretto.png, id=44, 311.1625pt x 198.7425pt>
+File: ./images/sollevamento_corretto.png Graphic file (type png)
+<use ./images/sollevamento_corretto.png>
+Package pdftex.def Info: ./images/sollevamento_corretto.png  used on input line
+ 94.
+(pdftex.def)             Requested size: 217.81226pt x 139.11879pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 90--91
-[][] 
+Underfull \hbox (badness 10000) in paragraph at lines 103--104
+
  []
 
-<./images/sollevamento_scorretto.png, id=38, 264.99pt x 155.58125pt>
+<./images/sollevamento_scorretto.png, id=46, 264.99pt x 155.58125pt>
 File: ./images/sollevamento_scorretto.png Graphic file (type png)
 <use ./images/sollevamento_scorretto.png>
 Package pdftex.def Info: ./images/sollevamento_scorretto.png  used on input lin
-e 93.
+e 108.
 (pdftex.def)             Requested size: 185.49173pt x 108.90611pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 93--95
-[][]
- []
-
-[3
-
- <./images/sollevamento_corretto.png> <./images/sollevamento_scorretto.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 106--108
-
- []
+[5
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 120--121
+
+ <./images/sollevamento_corretto.png>] [6 <./images/sollevamento_scorretto.png>
+]
+Capitolo 3.
+
+Underfull \hbox (badness 10000) in paragraph at lines 122--124
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 120--121
+Underfull \hbox (badness 10000) in paragraph at lines 136--137
 
  []
 
-<./images/triaxial_sensor.png, id=47, 652.4375pt x 652.4375pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 136--137
+
+ []
+
+<./images/triaxial_sensor.png, id=59, 652.4375pt x 652.4375pt>
 File: ./images/triaxial_sensor.png Graphic file (type png)
 <use ./images/triaxial_sensor.png>
-Package pdftex.def Info: ./images/triaxial_sensor.png  used on input line 125.
-(pdftex.def)             Requested size: 199.16928pt x 199.16736pt.
+Package pdftex.def Info: ./images/triaxial_sensor.png  used on input line 142.
+(pdftex.def)             Requested size: 213.39566pt x 213.3936pt.
+[7
 
-Underfull \hbox (badness 10000) in paragraph at lines 125--127
+
+
+]
+Overfull \hbox (15.0pt too wide) in paragraph at lines 150--152
 [][]
  []
 
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 132--135
-[][]
- []
-
-[4
-
- <./images/triaxial_sensor.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 146--147
+Underfull \hbox (badness 10000) in paragraph at lines 163--164
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 148--149
+Underfull \hbox (badness 10000) in paragraph at lines 165--166
 
  []
 
-<./images/sagoma_phone_watch.jpg, id=52, 415.5525pt x 1196.47pt>
+<./images/sagoma_phone_watch.jpg, id=63, 415.5525pt x 1196.47pt>
 File: ./images/sagoma_phone_watch.jpg Graphic file (type jpg)
 <use ./images/sagoma_phone_watch.jpg>
-Package pdftex.def Info: ./images/sagoma_phone_watch.jpg  used on input line 15
-4.
-(pdftex.def)             Requested size: 99.58464pt x 286.7205pt.
+Package pdftex.def Info: ./images/sagoma_phone_watch.jpg  used on input line 17
+1.
+(pdftex.def)             Requested size: 85.35826pt x 245.75261pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 151--161
+Overfull \hbox (15.0pt too wide) in paragraph at lines 168--178
 [][]
  []
 
-(java_code/wearable_module.tex
-Overfull \hbox (149.59311pt too wide) in paragraph at lines 165--1
+[8 <./images/triaxial_sensor.png>] (java_code/wearable_module.tex
+Overfull \hbox (149.59311pt too wide) in paragraph at lines 182--1
 \T1/cmr/m/n/10 al cam-bia-men-to ap-pe-na av-ve-nu-to. []
  []
 
-[5 <./images/sagoma_phone_watch.jpg>]
+
 ("C:\Users\Marco\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\lstlang1.
 sty"
 File: lstlang1.sty 2019/02/27 1.8b listings language file
-)
+) [9 <./images/sagoma_phone_watch.jpg>]
 Overfull \hbox (50.12813pt too wide) in paragraph at lines 41--42
 [][][][][][][][][][][][][][][][][][][][][][][][] 
  []
@@ -522,7 +522,7 @@ Overfull \hbox (45.02933pt too wide) in paragraph at lines 53--54
 [][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[6]
+
 Overfull \hbox (4.23892pt too wide) in paragraph at lines 74--75
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
@@ -532,7 +532,7 @@ Overfull \hbox (24.63412pt too wide) in paragraph at lines 97--98
 [][][][][][][][][][][] 
  []
 
-
+[10]
 Overfull \hbox (55.22693pt too wide) in paragraph at lines 109--110
 [][][][][][][][][][][][][][][][][] 
  []
@@ -542,494 +542,490 @@ Overfull \hbox (34.83173pt too wide) in paragraph at lines 110--111
 [][][][][][][][][][] 
  []
 
-) (java_code/shared_module.tex [7]) (java_code/mobile_module1.tex [8]
+) (java_code/shared_module.tex [11]) (java_code/mobile_module1.tex
 Overfull \hbox (50.12813pt too wide) in paragraph at lines 23--24
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-) (java_code/mobile_module2.tex
-Overfull \hbox (15.0pt too wide) in paragraph at lines 190--2
-[][] 
+) (java_code/mobile_module2.tex [12]
+Overfull \hbox (9.33772pt too wide) in paragraph at lines 9--10
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+] 
  []
 
 )
-Overfull \hbox (15.0pt too wide) in paragraph at lines 195--196
-[][] 
- []
-
-[9]
-Underfull \hbox (badness 10000) in paragraph at lines 210--212
+Underfull \hbox (badness 10000) in paragraph at lines 225--227
 
  []
 
-<./images/esperimento1.png, id=72, 364.36125pt x 433.62pt>
+<./images/esperimento1.png, id=85, 364.36125pt x 433.62pt>
 File: ./images/esperimento1.png Graphic file (type png)
 <use ./images/esperimento1.png>
-Package pdftex.def Info: ./images/esperimento1.png  used on input line 216.
+Package pdftex.def Info: ./images/esperimento1.png  used on input line 231.
 (pdftex.def)             Requested size: 255.05113pt x 303.53192pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 213--227
-[][]
+Overfull \hbox (15.0pt too wide) in paragraph at lines 229--238
+[]$[]$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 213--227
+Underfull \hbox (badness 10000) in paragraph at lines 229--238
 
  []
 
-[10 <./images/esperimento1.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 242--245
+[13 <./images/esperimento1.png>] [14]
+Capitolo 4.
+[15
+
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 261--261
 
  []
 
-<./images/registrazione_tesi/gyrXYZ.jpg, id=77, 1927.2pt x 939.51pt>
-File: ./images/registrazione_tesi/gyrXYZ.jpg Graphic file (type jpg)
-<use ./images/registrazione_tesi/gyrXYZ.jpg>
-Package pdftex.def Info: ./images/registrazione_tesi/gyrXYZ.jpg  used on input 
-line 250.
-(pdftex.def)             Requested size: 455.2446pt x 199.16656pt.
-
-Overfull \hbox (31.18427pt too wide) in paragraph at lines 250--251
- [] 
- []
-
-
-Overfull \hbox (848.12067pt too wide) in paragraph at lines 248--258
-[][][]
- []
-
-
-Overfull \hbox (848.12067pt too wide) in paragraph at lines 248--258
-[][][]
- []
-
-
-Overfull \hbox (848.12067pt too wide) in paragraph at lines 248--258
-[][][] 
- []
-
-[11
-
- <./images/registrazione_tesi/gyrXYZ.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 262--262
-
- []
-
-<./images/registrazione_tesi/pressure_phone.jpg, id=81, 1927.2pt x 939.51pt>
+<./images/registrazione_tesi/pressure_phone.jpg, id=96, 1927.2pt x 939.51pt>
 File: ./images/registrazione_tesi/pressure_phone.jpg Graphic file (type jpg)
 <use ./images/registrazione_tesi/pressure_phone.jpg>
 Package pdftex.def Info: ./images/registrazione_tesi/pressure_phone.jpg  used o
-n input line 265.
+n input line 264.
 (pdftex.def)             Requested size: 455.2446pt x 227.62303pt.
 
-Overfull \hbox (31.18427pt too wide) in paragraph at lines 265--266
+Overfull \hbox (31.18427pt too wide) in paragraph at lines 264--265
  [] 
  []
 
 
-Overfull \hbox (848.12067pt too wide) in paragraph at lines 263--274
+Overfull \hbox (848.12067pt too wide) in paragraph at lines 262--273
 [][][]
  []
 
 
-Overfull \hbox (848.12067pt too wide) in paragraph at lines 263--274
+Overfull \hbox (848.12067pt too wide) in paragraph at lines 262--273
 [][][]
  []
 
 
-Overfull \hbox (848.12067pt too wide) in paragraph at lines 263--274
+Overfull \hbox (848.12067pt too wide) in paragraph at lines 262--273
 [][][]
  []
 
 
-Overfull \hbox (848.12067pt too wide) in paragraph at lines 263--274
+Overfull \hbox (848.12067pt too wide) in paragraph at lines 262--273
 [][][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 275--275
+Underfull \hbox (badness 10000) in paragraph at lines 274--274
 
  []
 
-<./images/registrazione_tesi/pressure_watch.jpg, id=82, 1927.2pt x 939.51pt>
+<./images/registrazione_tesi/pressure_watch.jpg, id=97, 1927.2pt x 939.51pt>
 File: ./images/registrazione_tesi/pressure_watch.jpg Graphic file (type jpg)
 <use ./images/registrazione_tesi/pressure_watch.jpg>
 Package pdftex.def Info: ./images/registrazione_tesi/pressure_watch.jpg  used o
-n input line 279.
+n input line 278.
 (pdftex.def)             Requested size: 455.2446pt x 227.62303pt.
 
-Overfull \hbox (31.18427pt too wide) in paragraph at lines 279--280
+Overfull \hbox (31.18427pt too wide) in paragraph at lines 278--279
  [] 
  []
 
-[12
+[16
 
  <./images/registrazione_tesi/pressure_phone.jpg> <./images/registrazione_tesi/
 pressure_watch.jpg>]
-<./images/registrazione_tesi/accelerometrXYZ.jpg, id=87, 1927.2pt x 939.51pt>
+<./images/registrazione_tesi/accelerometrXYZ.jpg, id=101, 1927.2pt x 939.51pt>
 File: ./images/registrazione_tesi/accelerometrXYZ.jpg Graphic file (type jpg)
 <use ./images/registrazione_tesi/accelerometrXYZ.jpg>
 Package pdftex.def Info: ./images/registrazione_tesi/accelerometrXYZ.jpg  used 
-on input line 290.
+on input line 289.
 (pdftex.def)             Requested size: 455.2446pt x 199.16656pt.
 
-Overfull \hbox (31.18427pt too wide) in paragraph at lines 290--291
+Overfull \hbox (31.18427pt too wide) in paragraph at lines 289--290
  [] 
  []
 
 
-Overfull \hbox (848.12067pt too wide) in paragraph at lines 288--298
+Overfull \hbox (848.12067pt too wide) in paragraph at lines 287--297
 [][][]
  []
 
 
-Overfull \hbox (848.12067pt too wide) in paragraph at lines 288--298
+Overfull \hbox (848.12067pt too wide) in paragraph at lines 287--297
 [][][]
  []
 
 
-Overfull \hbox (848.12067pt too wide) in paragraph at lines 288--298
+Overfull \hbox (848.12067pt too wide) in paragraph at lines 287--297
 [][][] 
  []
 
-<./images/registrazione_tesi/accX.jpg, id=88, 1927.2pt x 939.51pt>
+<./images/registrazione_tesi/accX.jpg, id=102, 1927.2pt x 939.51pt>
 File: ./images/registrazione_tesi/accX.jpg Graphic file (type jpg)
 <use ./images/registrazione_tesi/accX.jpg>
 Package pdftex.def Info: ./images/registrazione_tesi/accX.jpg  used on input li
-ne 302.
+ne 301.
 (pdftex.def)             Requested size: 438.15933pt x 113.81151pt.
 
-Overfull \hbox (14.099pt too wide) in paragraph at lines 302--303
+Overfull \hbox (14.099pt too wide) in paragraph at lines 301--302
  [] 
  []
 
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 300--306
-[]$[]$
+Overfull \hbox (15.0pt too wide) in paragraph at lines 299--304
+[]$[]$ 
  []
 
-<./images/registrazione_tesi/accY.jpg, id=89, 1927.2pt x 939.51pt>
+<./images/registrazione_tesi/accY.jpg, id=103, 1927.2pt x 939.51pt>
 File: ./images/registrazione_tesi/accY.jpg Graphic file (type jpg)
 <use ./images/registrazione_tesi/accY.jpg>
 Package pdftex.def Info: ./images/registrazione_tesi/accY.jpg  used on input li
-ne 310.
+ne 308.
 (pdftex.def)             Requested size: 438.15933pt x 113.81151pt.
 
-Overfull \hbox (14.099pt too wide) in paragraph at lines 310--311
+Overfull \hbox (14.099pt too wide) in paragraph at lines 308--309
  [] 
  []
 
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 308--314
-[]$[]$
+Overfull \hbox (15.0pt too wide) in paragraph at lines 306--311
+[]$[]$ 
  []
 
-<./images/registrazione_tesi/accZ.jpg, id=90, 1927.2pt x 939.51pt>
+<./images/registrazione_tesi/accZ.jpg, id=104, 1927.2pt x 939.51pt>
 File: ./images/registrazione_tesi/accZ.jpg Graphic file (type jpg)
 <use ./images/registrazione_tesi/accZ.jpg>
 Package pdftex.def Info: ./images/registrazione_tesi/accZ.jpg  used on input li
-ne 318.
+ne 315.
 (pdftex.def)             Requested size: 438.15933pt x 113.81151pt.
 
-Overfull \hbox (14.099pt too wide) in paragraph at lines 318--319
+Overfull \hbox (14.099pt too wide) in paragraph at lines 315--316
  [] 
  []
 
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 316--325
+Overfull \hbox (15.0pt too wide) in paragraph at lines 313--322
 []$[]$
  []
 
 
-Overfull \hbox (848.12067pt too wide) in paragraph at lines 316--325
+Overfull \hbox (848.12067pt too wide) in paragraph at lines 313--322
 [][][]
  []
 
 
-Overfull \hbox (848.12067pt too wide) in paragraph at lines 316--325
+Overfull \hbox (848.12067pt too wide) in paragraph at lines 313--322
 [][][] 
  []
 
-<./images/registrazione_tesi/acc_ph.jpg, id=91, 1927.2pt x 939.51pt>
+<./images/registrazione_tesi/acc_ph.jpg, id=105, 1927.2pt x 939.51pt>
 File: ./images/registrazione_tesi/acc_ph.jpg Graphic file (type jpg)
 <use ./images/registrazione_tesi/acc_ph.jpg>
 Package pdftex.def Info: ./images/registrazione_tesi/acc_ph.jpg  used on input 
-line 330.
+line 327.
 (pdftex.def)             Requested size: 455.2446pt x 199.16656pt.
 
-Overfull \hbox (31.18427pt too wide) in paragraph at lines 330--331
+Overfull \hbox (31.18427pt too wide) in paragraph at lines 327--328
  [] 
  []
 
 
-Overfull \hbox (848.12067pt too wide) in paragraph at lines 328--338
+Overfull \hbox (848.12067pt too wide) in paragraph at lines 325--335
 [][][]
  []
 
 
-Overfull \hbox (848.12067pt too wide) in paragraph at lines 328--338
+Overfull \hbox (848.12067pt too wide) in paragraph at lines 325--335
 [][][]
  []
 
 
-Overfull \hbox (848.12067pt too wide) in paragraph at lines 328--338
+Overfull \hbox (848.12067pt too wide) in paragraph at lines 325--335
 [][][] 
  []
 
-[13
+[17
 
  <./images/registrazione_tesi/accelerometrXYZ.jpg> <./images/registrazione_tesi
 /accX.jpg> <./images/registrazione_tesi/accY.jpg> <./images/registrazione_tesi/
 accZ.jpg>]
-<./images/registrazione_tesi/acc_phX.jpg, id=95, 1927.2pt x 939.51pt>
+<./images/registrazione_tesi/acc_phX.jpg, id=109, 1927.2pt x 939.51pt>
 File: ./images/registrazione_tesi/acc_phX.jpg Graphic file (type jpg)
 <use ./images/registrazione_tesi/acc_phX.jpg>
 Package pdftex.def Info: ./images/registrazione_tesi/acc_phX.jpg  used on input
- line 342.
+ line 339.
 (pdftex.def)             Requested size: 438.15933pt x 113.81151pt.
 
-Overfull \hbox (14.099pt too wide) in paragraph at lines 342--343
+Overfull \hbox (14.099pt too wide) in paragraph at lines 339--340
  [] 
  []
 
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 340--346
-[]$[]$
- []
-
-<./images/registrazione_tesi/acc_phY.jpg, id=96, 1927.2pt x 939.51pt>
-File: ./images/registrazione_tesi/acc_phY.jpg Graphic file (type jpg)
-<use ./images/registrazione_tesi/acc_phY.jpg>
-Package pdftex.def Info: ./images/registrazione_tesi/acc_phY.jpg  used on input
- line 350.
-(pdftex.def)             Requested size: 438.15933pt x 113.81151pt.
-
-Overfull \hbox (14.099pt too wide) in paragraph at lines 350--351
- [] 
- []
-
-
-Overfull \hbox (15.0pt too wide) in paragraph at lines 348--354
-[]$[]$
- []
-
-<./images/registrazione_tesi/acc_phZ.jpg, id=97, 1927.2pt x 939.51pt>
-File: ./images/registrazione_tesi/acc_phZ.jpg Graphic file (type jpg)
-<use ./images/registrazione_tesi/acc_phZ.jpg>
-Package pdftex.def Info: ./images/registrazione_tesi/acc_phZ.jpg  used on input
- line 358.
-(pdftex.def)             Requested size: 438.15933pt x 113.81151pt.
-
-Overfull \hbox (14.099pt too wide) in paragraph at lines 358--359
- [] 
- []
-
-
-Overfull \hbox (15.0pt too wide) in paragraph at lines 356--363
-[]$[]$
- []
-
-<./images/registrazione_tesi/mag_phXYZ.jpg, id=98, 1927.2pt x 939.51pt>
-File: ./images/registrazione_tesi/mag_phXYZ.jpg Graphic file (type jpg)
-<use ./images/registrazione_tesi/mag_phXYZ.jpg>
-Package pdftex.def Info: ./images/registrazione_tesi/mag_phXYZ.jpg  used on inp
-ut line 370.
-(pdftex.def)             Requested size: 455.2446pt x 199.16656pt.
-
-Overfull \hbox (31.18427pt too wide) in paragraph at lines 370--371
- [] 
- []
-
-
-Overfull \hbox (848.12067pt too wide) in paragraph at lines 368--378
-[][][]
- []
-
-
-Overfull \hbox (848.12067pt too wide) in paragraph at lines 368--378
-[][][]
- []
-
-
-Overfull \hbox (848.12067pt too wide) in paragraph at lines 368--378
-[][][] 
- []
-
-[14 <./images/registrazione_tesi/acc_ph.jpg> <./images/registrazione_tesi/acc_p
-hX.jpg> <./images/registrazione_tesi/acc_phY.jpg> <./images/registrazione_tesi/
-acc_phZ.jpg>]
-<./images/registrazione_tesi/mag_phX.jpg, id=102, 1927.2pt x 939.51pt>
-File: ./images/registrazione_tesi/mag_phX.jpg Graphic file (type jpg)
-<use ./images/registrazione_tesi/mag_phX.jpg>
-Package pdftex.def Info: ./images/registrazione_tesi/mag_phX.jpg  used on input
- line 382.
-(pdftex.def)             Requested size: 438.15933pt x 113.81151pt.
-
-Overfull \hbox (14.099pt too wide) in paragraph at lines 382--383
- [] 
- []
-
-
-Overfull \hbox (15.0pt too wide) in paragraph at lines 380--385
+Overfull \hbox (15.0pt too wide) in paragraph at lines 337--342
 []$[]$ 
  []
 
-<./images/registrazione_tesi/mag_phY.jpg, id=103, 1927.2pt x 939.51pt>
+<./images/registrazione_tesi/acc_phY.jpg, id=110, 1927.2pt x 939.51pt>
+File: ./images/registrazione_tesi/acc_phY.jpg Graphic file (type jpg)
+<use ./images/registrazione_tesi/acc_phY.jpg>
+Package pdftex.def Info: ./images/registrazione_tesi/acc_phY.jpg  used on input
+ line 346.
+(pdftex.def)             Requested size: 438.15933pt x 113.81151pt.
+
+Overfull \hbox (14.099pt too wide) in paragraph at lines 346--347
+ [] 
+ []
+
+
+Overfull \hbox (15.0pt too wide) in paragraph at lines 344--349
+[]$[]$ 
+ []
+
+<./images/registrazione_tesi/acc_phZ.jpg, id=111, 1927.2pt x 939.51pt>
+File: ./images/registrazione_tesi/acc_phZ.jpg Graphic file (type jpg)
+<use ./images/registrazione_tesi/acc_phZ.jpg>
+Package pdftex.def Info: ./images/registrazione_tesi/acc_phZ.jpg  used on input
+ line 353.
+(pdftex.def)             Requested size: 438.15933pt x 113.81151pt.
+
+Overfull \hbox (14.099pt too wide) in paragraph at lines 353--354
+ [] 
+ []
+
+
+Overfull \hbox (15.0pt too wide) in paragraph at lines 351--358
+[]$[]$
+ []
+
+<./images/registrazione_tesi/mag_phXYZ.jpg, id=112, 1927.2pt x 939.51pt>
+File: ./images/registrazione_tesi/mag_phXYZ.jpg Graphic file (type jpg)
+<use ./images/registrazione_tesi/mag_phXYZ.jpg>
+Package pdftex.def Info: ./images/registrazione_tesi/mag_phXYZ.jpg  used on inp
+ut line 365.
+(pdftex.def)             Requested size: 455.2446pt x 199.16656pt.
+
+Overfull \hbox (31.18427pt too wide) in paragraph at lines 365--366
+ [] 
+ []
+
+
+Overfull \hbox (848.12067pt too wide) in paragraph at lines 363--373
+[][][]
+ []
+
+
+Overfull \hbox (848.12067pt too wide) in paragraph at lines 363--373
+[][][]
+ []
+
+
+Overfull \hbox (848.12067pt too wide) in paragraph at lines 363--373
+[][][] 
+ []
+
+[18 <./images/registrazione_tesi/acc_ph.jpg> <./images/registrazione_tesi/acc_p
+hX.jpg> <./images/registrazione_tesi/acc_phY.jpg> <./images/registrazione_tesi/
+acc_phZ.jpg>]
+<./images/registrazione_tesi/mag_phX.jpg, id=117, 1927.2pt x 939.51pt>
+File: ./images/registrazione_tesi/mag_phX.jpg Graphic file (type jpg)
+<use ./images/registrazione_tesi/mag_phX.jpg>
+Package pdftex.def Info: ./images/registrazione_tesi/mag_phX.jpg  used on input
+ line 377.
+(pdftex.def)             Requested size: 438.15933pt x 113.81151pt.
+
+Overfull \hbox (14.099pt too wide) in paragraph at lines 377--378
+ [] 
+ []
+
+
+Overfull \hbox (15.0pt too wide) in paragraph at lines 375--380
+[]$[]$ 
+ []
+
+<./images/registrazione_tesi/mag_phY.jpg, id=118, 1927.2pt x 939.51pt>
 File: ./images/registrazione_tesi/mag_phY.jpg Graphic file (type jpg)
 <use ./images/registrazione_tesi/mag_phY.jpg>
 Package pdftex.def Info: ./images/registrazione_tesi/mag_phY.jpg  used on input
- line 389.
+ line 384.
 (pdftex.def)             Requested size: 438.15933pt x 113.81151pt.
 
-Overfull \hbox (14.099pt too wide) in paragraph at lines 389--390
+Overfull \hbox (14.099pt too wide) in paragraph at lines 384--385
  [] 
  []
 
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 387--393
+Overfull \hbox (15.0pt too wide) in paragraph at lines 382--388
 []$[]$
  []
 
-<./images/registrazione_tesi/mag_phZ.jpg, id=104, 1927.2pt x 939.51pt>
+<./images/registrazione_tesi/mag_phZ.jpg, id=119, 1927.2pt x 939.51pt>
 File: ./images/registrazione_tesi/mag_phZ.jpg Graphic file (type jpg)
 <use ./images/registrazione_tesi/mag_phZ.jpg>
 Package pdftex.def Info: ./images/registrazione_tesi/mag_phZ.jpg  used on input
- line 397.
+ line 392.
 (pdftex.def)             Requested size: 438.15933pt x 113.81151pt.
 
-Overfull \hbox (14.099pt too wide) in paragraph at lines 397--398
+Overfull \hbox (14.099pt too wide) in paragraph at lines 392--393
  [] 
  []
 
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 395--402
+Overfull \hbox (15.0pt too wide) in paragraph at lines 390--397
 []$[]$
  []
 
-[15 <./images/registrazione_tesi/mag_phXYZ.jpg> <./images/registrazione_tesi/ma
+<./images/registrazione_tesi/gyrXYZ.jpg, id=120, 1927.2pt x 939.51pt>
+File: ./images/registrazione_tesi/gyrXYZ.jpg Graphic file (type jpg)
+<use ./images/registrazione_tesi/gyrXYZ.jpg>
+Package pdftex.def Info: ./images/registrazione_tesi/gyrXYZ.jpg  used on input 
+line 404.
+(pdftex.def)             Requested size: 455.2446pt x 204.85786pt.
+
+Overfull \hbox (31.18427pt too wide) in paragraph at lines 404--405
+ [] 
+ []
+
+[19 <./images/registrazione_tesi/mag_phXYZ.jpg> <./images/registrazione_tesi/ma
 g_phX.jpg> <./images/registrazione_tesi/mag_phY.jpg> <./images/registrazione_te
-si/mag_phZ.jpg>]
-<./images/registrazione_tesi/outliers.jpg, id=108, 1424.32124pt x 701.62125pt>
+si/mag_phZ.jpg>] [20 <./images/registrazione_tesi/gyrXYZ.jpg>]
+<./images/registrazione_tesi/outliers.jpg, id=127, 1424.32124pt x 701.62125pt>
 File: ./images/registrazione_tesi/outliers.jpg Graphic file (type jpg)
 <use ./images/registrazione_tesi/outliers.jpg>
 Package pdftex.def Info: ./images/registrazione_tesi/outliers.jpg  used on inpu
-t line 414.
+t line 419.
 (pdftex.def)             Requested size: 438.16635pt x 227.61737pt.
 
-Overfull \hbox (14.10602pt too wide) in paragraph at lines 414--415
+Overfull \hbox (14.10602pt too wide) in paragraph at lines 419--420
  [] 
  []
 
 File: ./images/registrazione_tesi/pressure_watch.jpg Graphic file (type jpg)
 <use ./images/registrazione_tesi/pressure_watch.jpg>
 Package pdftex.def Info: ./images/registrazione_tesi/pressure_watch.jpg  used o
-n input line 434.
+n input line 439.
 (pdftex.def)             Requested size: 426.77895pt x 170.7101pt.
 
-Overfull \hbox (2.71861pt too wide) in paragraph at lines 434--435
+Overfull \hbox (2.71861pt too wide) in paragraph at lines 439--440
  [] 
  []
 
 
-Overfull \hbox (333.27048pt too wide) in paragraph at lines 427--442
+Overfull \hbox (333.27048pt too wide) in paragraph at lines 432--447
 \T1/cmr/m/n/10 d'a-ria o le va-ria-zio-ni di pres-sio-ne ge-ne-ra-te dal-l'a-pr
 i-re o chiu-de-re una fi-ne-stra). []
  []
 
-[16
+[21
 
  <./images/registrazione_tesi/outliers.jpg>] (matlab_code/matlab_filters.tex
 ("C:\Users\Marco\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\lstlang1.
 sty"
 File: lstlang1.sty 2019/02/27 1.8b listings language file
 )
-Underfull \hbox (badness 10000) in paragraph at lines 446--2
+Underfull \hbox (badness 10000) in paragraph at lines 451--2
 
  []
 
 )
-<./images/segnali/pressure_phone_movmean.png, id=112, 1448.41125pt x 395.22656p
+<./images/segnali/pressure_phone_movmean.png, id=131, 1448.41125pt x 395.22656p
 t>
 File: ./images/segnali/pressure_phone_movmean.png Graphic file (type png)
 <use ./images/segnali/pressure_phone_movmean.png>
 Package pdftex.def Info: ./images/segnali/pressure_phone_movmean.png  used on i
-nput line 452.
+nput line 457.
 (pdftex.def)             Requested size: 455.23532pt x 170.71602pt.
 
-Overfull \hbox (31.17499pt too wide) in paragraph at lines 452--453
+Overfull \hbox (31.17499pt too wide) in paragraph at lines 457--458
  [] 
  []
 
-<./images/segnali/pressure_phone_gauss.png, id=113, 1448.41125pt x 395.22656pt>
+<./images/segnali/pressure_phone_gauss.png, id=132, 1448.41125pt x 395.22656pt>
 
 File: ./images/segnali/pressure_phone_gauss.png Graphic file (type png)
 <use ./images/segnali/pressure_phone_gauss.png>
 Package pdftex.def Info: ./images/segnali/pressure_phone_gauss.png  used on inp
-ut line 462.
+ut line 467.
 (pdftex.def)             Requested size: 455.23532pt x 170.71602pt.
 
-Overfull \hbox (31.17499pt too wide) in paragraph at lines 462--463
+Overfull \hbox (31.17499pt too wide) in paragraph at lines 467--468
  [] 
  []
 
-[17 <./images/segnali/pressure_phone_movmean.png (PNG copy)>] [18 <./images/seg
+[22 <./images/segnali/pressure_phone_movmean.png (PNG copy)>] [23 <./images/seg
 nali/pressure_phone_gauss.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 479--480
+Capitolo 5.
+
+Underfull \hbox (badness 10000) in paragraph at lines 484--485
 
  []
 
 (matlab_code/funzione_filtro.tex
-Underfull \hbox (badness 10000) in paragraph at lines 492--2
+Underfull \hbox (badness 10000) in paragraph at lines 497--2
 
  []
 
-) [19
+[24
 
-] (java_code/final_project_variables.tex
-Underfull \hbox (badness 10000) in paragraph at lines 504--2
+
+
+]) (java_code/final_project_variables.tex
+Underfull \hbox (badness 10000) in paragraph at lines 509--2
 
  []
 
-) (java_code/final_project_filters.tex
+) (java_code/final_project_filters.tex [25]
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 19.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 19.
- [20]) (java_code/filterAndFindpeak.tex
-[21]) [22] [23
+) (java_code/filterAndFindpeak.tex
+[26]) (java_code/resizeWindows.tex [27]) [28]
+Capitolo 6.
 
-] [24
+Underfull \hbox (badness 10000) in paragraph at lines 552--556
+
+ []
+
+[29
+
+
+
+] [30
 
 ] (tesi.aux) ) 
 Here is how much of TeX's memory you used:
- 7705 strings out of 492895
- 116997 string characters out of 3123735
- 416926 words of memory out of 3000000
- 11459 multiletter control sequences out of 15000+200000
- 14538 words of font info for 32 fonts, out of 3000000 for 9000
+ 7745 strings out of 492895
+ 117633 string characters out of 3123735
+ 421526 words of memory out of 3000000
+ 11490 multiletter control sequences out of 15000+200000
+ 18453 words of font info for 37 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 51i,11n,46p,1008b,1691s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 51i,11n,46p,1008b,1774s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\Marco\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappe
 n/ec/dpi600\ecti0800.pk> <C:\Users\Marco\AppData\Local\MiKTeX\2.9\fonts/pk/ljfo
 ur/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\Marco\AppData\Local\MiKTeX\2.9\fon
 ts/pk/ljfour/jknappen/ec/dpi600\ecbx0800.pk> <C:\Users\Marco\AppData\Local\MiKT
-eX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0900.pk> <C:\Users\Marco\AppData\
-Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx0900.pk> <C:\Users\Marc
-o\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\
-Users\Marco\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecti100
+eX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\Marco\AppData\
+Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0900.pk> <C:\Users\Marc
+o\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx0900.pk> <C:\
+Users\Marco\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx144
 0.pk> <C:\Users\Marco\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi6
-00\ecrm1000.pk> <C:\Users\Marco\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknapp
-en/ec/dpi600\ecbx1000.pk> <C:\Users\Marco\AppData\Local\MiKTeX\2.9\fonts/pk/ljf
-our/jknappen/ec/dpi600\ecbx1440.pk><C:/Users/Marco/AppData/Local/Programs/MiKTe
-X 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Marco/AppData/Local/P
-rograms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Marco/App
-Data/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Use
-rs/Marco/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy1
-0.pfb><C:/Users/Marco/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsf
-onts/cm/cmsy8.pfb>
-Output written on tesi.pdf (25 pages, 2872058 bytes).
+00\ecsl1000.pk> <C:\Users\Marco\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknapp
+en/ec/dpi600\ecbx2074.pk> <C:\Users\Marco\AppData\Local\MiKTeX\2.9\fonts/pk/ljf
+our/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\Marco\AppData\Local\MiKTeX\2.9\fo
+nts/pk/ljfour/jknappen/ec/dpi600\ecbx1000.pk> <C:\Users\Marco\AppData\Local\MiK
+TeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk> <C:\Users\Marco\AppData
+\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1000.pk><C:/Users/Marc
+o/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><
+C:/Users/Marco/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
+/cmr10.pfb><C:/Users/Marco/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public
+/amsfonts/cm/cmr12.pfb><C:/Users/Marco/AppData/Local/Programs/MiKTeX 2.9/fonts/
+type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Marco/AppData/Local/Programs/MiKT
+eX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on tesi.pdf (31 pages, 2912104 bytes).
 PDF statistics:
- 616 PDF objects out of 1000 (max. 8388607)
+ 723 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  121 words of extra memory for PDF output out of 10000 (max. 10000000)
 

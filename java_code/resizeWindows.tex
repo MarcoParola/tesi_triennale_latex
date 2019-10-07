@@ -1,0 +1,38 @@
+% ----- android mobile module -----
+\begin{lstlisting}[language=Java,  basicstyle=\footnotesize]
+     private void resize_windows(Long time) {
+
+            // ACCELEROMETR
+            while(accelerometr_signal_timestamp.get(1) < time) {
+                  accelerometr_signal_timestamp.remove(0);
+                  accelerometr_signal.remove(0);
+            }
+            if((time - accelerometr_signal_timestamp.get(0)) >
+         (time - accelerometr_signal_timestamp.get(1))) {
+                  accelerometr_signal_timestamp.remove(0);
+                  accelerometr_signal.remove(0);
+            }
+
+            // MAGNETOMETR
+            while(magnetometr_signal_timestamp.get(1) < time) {
+                  magnetometr_signal_timestamp.remove(0);
+                  magnetometr_signal.remove(0);
+            }
+            if((time - magnetometr_signal_timestamp.get(0)) >
+         (time - magnetometr_signal_timestamp.get(1))) {
+                  magnetometr_signal_timestamp.remove(0);
+                  magnetometr_signal.remove(0);
+            }
+
+            // GYROSCOPE
+            while(gyroscope_signal_timestamp.get(1) < time) {
+                  gyroscope_signal_timestamp.remove(0);
+                  gyroscope_signal.remove(0);
+            }
+            if((time - gyroscope_signal_timestamp.get(0)) >
+         (time - gyroscope_signal_timestamp.get(1))) {
+                  gyroscope_signal_timestamp.remove(0);
+                  gyroscope_signal.remove(0);
+            }
+        }
+\end{lstlisting}
