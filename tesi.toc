@@ -32,4 +32,5 @@
 \contentsline {subsection}{\numberline {5.1.6}Memorizzazione dei segnali di sensori diversi dal barometro}{27}% 
 \contentsline {subsection}{\numberline {5.1.7}Testing seconda implementazione modulo detection}{28}% 
 \contentsline {chapter}{\numberline {6}Conclusione}{29}% 
-\contentsline {section}{\numberline {6.1}Sitografia}{30}% 
+\contentsline {section}{\numberline {6.1}Analisi di una finestra temporale}{30}% 
+\contentsline {section}{\numberline {6.2}Sitografia}{31}% 

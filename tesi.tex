@@ -21,14 +21,15 @@
 \Divisione{Scuola di Ingegneria} 
 \Corso[Laurea]{Ingegneria Informatica} 
 \Annoaccademico{2019--2020} 
-\Titolo { \makebox [\linewidth ]{} \makebox [\linewidth ]{} \makebox[\linewidth]{} Monitoraggio danni muscolo-scheletrici in seguito a sollevamenti di carichi}
+\Titolo { \makebox [\linewidth ]{} \makebox [\linewidth ]{} \makebox[\linewidth]{}Sviluppo di una app per rilevare operazioni di sollevamento manuale di carichi pesanti in contesti industriali}
 \Sottotitolo {Sviluppo modulo di rilevazione dell'abbassamento}
 \Filigrana [height=4cm,before=0.28,after=1]{./images/stemma_unipi.png} 
 
 
 \Rientro{1cm} 
 \Candidato{Marco Parola} 
-\Relatore{Prof.ssa Lazzerini Beatrice\\Dr. Francesco Pistolesi}
+\Relatore{Prof.ssa Lazzerini Beatrice}
+\Relatore{Dr. Francesco Pistolesi}
 \Punteggiatura{} 
  
 \end{frontespizio}
@@ -45,6 +46,7 @@
 \vspace{\stretch{2}}
 \cleardoublepage
 
+\clearpage
 
 % ----- INDICE -----
 	\tableofcontents
@@ -216,7 +218,7 @@ Dopo essersi muniti di uno strumento che rispecchi i requisiti precedentemente e
 
 % ----- ESPERIMENTO I -----
 	\subsection{Esperimento 1}
-L' esperimento svolto è piuttosto semplice, vengono eseguite essenzialmente 3 azioni in loop:
+L’esperimento svolto comprende le seguenti tre azioni:
 \begin {itemize}
 \item camminata
 \item sollevamento del carico 
@@ -396,7 +398,6 @@ Inoltre il comando può essere chiamato specificando alcune opzioni con la segue
 \makebox[\linewidth]{}
 
 
-
 % ---- GRAFICI GIROSCOPIO ------
 \subsection{Giroscopio smartphone}
 \begin{minipage}{\linewidth}
@@ -554,20 +555,48 @@ Lo sviluppo del progetto termina a questo punto; la prosecuzione del lavoro dovr
 La semplicità di questa soluzione è il suo punto di forza, infatti non è richiesta alcuna infrastruttura, che potrebbe innalzare notevolmente i costi di installazione e scoraggiarne la diffusione. È infatti sufficiente l’acquisto di dispositivi, che ormai fanno parte della vita quotidiana (smartphone e smartwatch), e l’installazione su di essi di applicativi che implementino gli algoritmi descritti.
 A fronte di un investimento di piccola entità (il prezzo medio di uno smartwatch che include tutta la sensoristica necessaria è di circa 300 Euro, mentre di uno smartphone circa 400), è possibile ridurre il numero di infortuni dovuti a questo compito, riducendo di conseguenza anche il numero di giorni di assenza e favorendo condizioni di lavoro più sicure per i dipendenti, che si rispecchia anche in una maggiore produttività.
 
+\clearpage
+% ---- ANALISI FINESTRA -----
+\section{Analisi di una finestra temporale}
+Nella seguente immagine viene visualizzato il grafico di una finestra dei segnali relativi ad un abbassamento, in cui il segnale posto per primo, che detta gli istanti da analizzare, è quello barometrico dello smartwatch, seguito dal segnale barometrico dello smartphone, accelerometrico lungo l'asse X dello smartwatch ed infine accelerometrico lungo l'asse Y dello smartphone.\\ \\
+\begin{minipage}{\linewidth}
+\begin{center}
+\vspace{1mm}
+\includegraphics[width=154mm, height= 65mm]{./images/finestra_abbassamento/pressure_watch.jpg} 
+\end{center}
+\end{minipage}
+\begin{minipage}{\linewidth}
+\begin{center}
+\includegraphics[width=154mm, height= 40mm]{./images/finestra_abbassamento/pressure_phone.jpg} 
+\end{center}
+\end{minipage}
+\begin{minipage}{\linewidth}
+\begin{center}
+\includegraphics[width=154mm, height= 40mm]{./images/finestra_abbassamento/accelerometr_watchX.jpg} 
+\end{center}
+\end{minipage}
+\begin{minipage}{\linewidth}
+\begin{center}
+\includegraphics[width=154mm, height= 40mm]{./images/finestra_abbassamento/accelerometr_phoneY.jpg}
+\captionof{figure}{Finestra relativa ad una abbasamento del barometro dello smartwatch, barometro dello smartphone, accelerometroX smartwatch e accelerometriY smartphone.\\} 
+\end{center}
+\end{minipage}
+\makebox[\linewidth]{}
+
+
 
 \clearpage
 % ----- SITOGRAFIA -----
-	\section{Sitografia}
+	\chapter{Sitografia}
 
 \begin{itemize}
 \item Documentazione Android, \textit{https://developer.android.com/docs}
 \item Documentazione java Oracle, \textit{https://docs.oracle.com/en/java/index.html}
 \item Documentazione MATLAB, \textit{https://it.mathworks.com/}
 \item Wikipedia, \textit{https://en.wikipedia.org/wiki/Main\_Page}
+\item IEEE Xplore, \textit{https://ieeexplore.ieee.org/Xplore/home.jsp}
+\item Science Direct, \textit{https://www.sciencedirect.com/}
 \end{itemize}
-
-
-
 
 \end{document}
 
