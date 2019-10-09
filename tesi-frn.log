@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.7.22)  8 OCT 2019 12:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.7.22)  9 OCT 2019 14:23
 entering extended mode
 **./tesi-frn.tex
 (tesi-frn.tex
@@ -276,7 +276,7 @@ emma_unipi.png>] )
 Here is how much of TeX's memory you used:
  2906 strings out of 492895
  43144 string characters out of 3123735
- 124088 words of memory out of 3000000
+ 124082 words of memory out of 3000000
  6792 multiletter control sequences out of 15000+200000
  7297 words of font info for 26 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -285,7 +285,7 @@ Here is how much of TeX's memory you used:
 /public/amsfonts/cm/cmbx12.pfb><C:/Users/Marco/AppData/Local/Programs/MiKTeX 2.
 9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Marco/AppData/Local/Progra
 ms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-Output written on tesi-frn.pdf (1 page, 81566 bytes).
+Output written on tesi-frn.pdf (1 page, 81574 bytes).
 PDF statistics:
  21 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

@@ -14,15 +14,15 @@
 
 \baselineskip 13pt
 	
-% ---- FRONTESPIZIO -----
+% ---- FRONTESPIZIO ----- 
 \begin{frontespizio} 
  \Preambolo{\renewcommand{\frontpretitlefont}{\fontsize{14}{12}\scshape}}
 \Istituzione{Università di Pisa}
 \Divisione{Scuola di Ingegneria} 
 \Corso[Laurea]{Ingegneria Informatica} 
 \Annoaccademico{2019--2020} 
-\Titolo { \makebox [\linewidth ]{} \makebox [\linewidth ]{} \makebox[\linewidth]{}Sviluppo di una app per rilevare operazioni di sollevamento manuale di carichi pesanti in contesti industriali}
-\Sottotitolo {Sviluppo modulo di rilevazione dell'abbassamento}
+\Titolo { \vspace{35mm}Sviluppo di una app per rilevare operazioni di sollevamento manuale di carichi pesanti in contesti industriali}
+\Sottotitolo {Sviluppo modulo di detection dell'azione di abbassamento}
 \Filigrana [height=4cm,before=0.28,after=1]{./images/stemma_unipi.png} 
 
 
@@ -87,7 +87,7 @@ Lo scopo di questa tesi è analizzare i movimenti compiuti durante il \textbf{so
 
 In prima battuta è fondamentale comprendere come debba essere compiuto il task del sollevamento; con lo scopo di formare il personale, che durante la giornata lavorativa si trova a dover affrontare il movimento considerato. 
 	\section{Movimento corretto}
-Il modo corretto, al fine di evitare infortuni e minimizzare l'indice di rischio durante il compimento del task critico, è piegare le gambe, mantenendole leggermente divaricate, all'altezza delle spalle e, mantenendo un’inclinazione lieve e costante del busto verso il carico, il quale deve essere posizionato alla minore distanza possibile dai piedi (circa 10 cm), tornare in posizione eretta facendo forza principalmente sulle gambe. \\ L'immagine di seguito riportata, illustra i passaggi da seguire per un corretto sollevamento.\\
+Il modo corretto, al fine di evitare infortuni e minimizzare l'indice di rischio durante il compimento del task critico, è piegare le gambe, mantenendole leggermente divaricate, all'altezza delle spalle e, mantenendo un’inclinazione lieve e costante del busto verso il carico, il quale deve essere posizionato alla minore distanza possibile dai piedi (circa 10 cm), tornare in posizione eretta facendo forza principalmente sulle gambe. \\ La figura \ref{fig:sollevamento_corretto} illustra i passaggi da seguire per un corretto sollevamento.\\
 
 \vspace{2mm}
 \begin{center}
@@ -96,13 +96,15 @@ Il modo corretto, al fine di evitare infortuni e minimizzare l'indice di rischio
 \includegraphics[width=70mm,scale=0.7]{./images/sollevamento_corretto.png} 
 \vspace{3mm}
 \captionof{figure}{Sollevamento corretto.}
+\label{fig:sollevamento_corretto}
 \end{center}
 \end{minipage}
 \end{center}
 \vspace{5mm}
 
 \section{Movimento scorretto}
-	Un modo scorretto di sollevare un carico è invece illustrato nella seguente figura, dove non si utilizzano le gambe, che rimangono stese durante tutta l'esecuzione della manovra, per aiutarsi nella distribuzione del peso, ma ci si piega con la sola schiena, esponendola di fatto a un alto rischio di disturbi dovuti a sovraccarico biomeccanico delle vertebre e dei dischi intervertebrali. Tale movimento è assolutamente da evitare. \\
+	Un modo scorretto di sollevare un carico è invece illustrato nella seguente figura, dove non si utilizzano le gambe, che rimangono stese durante tutta l'esecuzione della manovra, per aiutarsi nella distribuzione del peso, ma ci si piega con la sola schiena, esponendola di fatto a un alto rischio di disturbi dovuti a sovraccarico biomeccanico delle vertebre e dei dischi intervertebrali. \\ La figura \ref{fig:sollevamento_scorretto} illustra un esempio di movimenti assolutamente da evitare.\\
+
 
 \begin{center}
 \begin{minipage}{0.48\linewidth}
@@ -110,6 +112,7 @@ Il modo corretto, al fine di evitare infortuni e minimizzare l'indice di rischio
 \includegraphics[width=70mm,scale=0.7]{./images/sollevamento_scorretto.png} 
 \vspace{3mm}
 \captionof{figure}{Sollevamento scorretto.}
+\label{fig:sollevamento_scorretto}
 \end{center}
 \end{minipage}
 \end{center}
@@ -125,7 +128,6 @@ Per poter eseguire uno studio del rischio che corre una persona, sollevando un c
 Dunque si rende necessario uno strumento che permetta di raccogliere e catalogare informazioni, con cui poter ricostruire il movimento e, in uno step successivo, eseguire un' analisi per poter quantificare il rischio. \\
 
 
-
 	\section{Sistema per la raccolta ed il salvataggio di dati}
 
 
@@ -137,20 +139,24 @@ I sensori che prenderemo in considerazione, di cui l'hardware dovrà essere forn
 \item \textbf{Magnetometro triassiale}, misura l’intensità del flusso del campo magnetico terrestre relativamente ai tre assi del sistema di riferimento. Tramite questo tipo di sensore possiamo ricavare informazioni sull’angolo che questo dispositivo forma con il campo magnetico terrestre.
 \item \textbf{Barometro}, misura la pressione atmosferica alla quale il dispositivo è sottoposto; grazie alla elevata sensibilità di questo sensore è possibile individuare variazioni di pressione anche molto piccole, dell’ordine dei mbar.\\ \\
 \end{itemize}
+Un'altra proprietà che il nostro sistema deve possedere è essere \textbf{mini-invasivo}, infatti la persona che utilizza uno strumento di questo genere, non dovrebbe quasi accorgersi della sua presenza, affinché non si senta eccessivamente controllato oppure disturbato nei movimenti che compie; questo ci permetterà di effettuare delle misurazioni naturali e non falsate.
 
+\vspace{18mm}\vspace{18mm}
 \begin{center}
 \begin{minipage}{0.68\linewidth}
 \begin{center}
-\includegraphics[width=75mm]{./images/triaxial_sensor.png}
+\vspace{18mm}
+\includegraphics[width=85mm]{./images/triaxial_sensor.png}
 \vspace{3mm}
 \captionof{figure}{Sistema di coordinate utilizzato dall'API Sensor.}
+\label{fig:triaxis}
 \end{center}
 \end{minipage}
 \end{center}
-\vspace{2mm}
+\vspace{4mm}
+La figura \ref{fig:triaxis} mostra il sistema di riferimetno cartesiano, di cui i sensori fanno uso, per descrivere la posizione e il moviemento nello spazio del dispositivo che li contiene.
 
-\makebox[\linewidth]{}
-Un'altra proprietà che il nostro sistema deve possedere è essere \textbf{mini-invasivo}, infatti la persona che utilizza uno strumento di questo genere, non dovrebbe quasi accorgersi della sua presenza, affinché non si senta eccessivamente controllato oppure disturbato nei movimenti che compie; questo ci permetterà di effettuare delle misurazioni naturali e non falsate.
+\clearpage
 
 
 % ----- APPLICAZIONE ANDROID -----
@@ -160,9 +166,9 @@ La scelta del sistema operativo, su cui si basa il sistema, è dovuta a vari fat
 In particolare durante lo svolgimento della tesi è stato adoperato uno smartphone Samsung Galaxy S6, sistema operativo Android 7.0 e uno smartwatch Huawei Watch 2, sistema operativo Wear OS 2.0 . \\
 Di seguito i 3 moduli principali, nei quali è organizzato il progetto:
 \begin{itemize}
-\item mobile
 \item wear
-\item shared\_mobile\_watch \\
+\item shared\_mobile\_watch 
+\item mobile \\
 \end{itemize}
 Il fine di questo sistema è produrre nel file system del telefono, in particolare nella directory "Documents", \textit{Environment.DIRECTORY\_DOCUMENTS}, otto file CSV, quattro relativi allo smartphone: \textit{magnetometr\_phone, gyroscope\_phone, accelerometr\_phone, pressure\_phone} e quattro relativi allo smartwatch: \textit{magnetometr\_watch, gyroscope\_watch, accelerometr\_watch, pressure\_watch}. Ognuno di questi 4 file descrive il segnale proveniente da uno dei sensori precedentemente citati. \\
 
@@ -173,6 +179,7 @@ Il fine di questo sistema è produrre nel file system del telefono, in particola
 \includegraphics[width=30mm]{./images/sagoma_phone_watch.jpg} 
 \makebox[\linewidth]{}
 \captionof{figure}{Posizionamento dei dispositivi indossabili sull'utente.}
+\label{fig:device_position}
 \end{center}
 \end{minipage}
 \makebox[\linewidth]{}
@@ -188,7 +195,7 @@ Nella seguente porzione di codice viene mostrato il callback che viene chiamato 
 \makebox[\linewidth]{}
 \input{./java_code/wearable_module.tex}
 
-
+\clearpage
 % ----- MODULO SHARED -----
 \subsection{Modulo shared\_mobile\_watch}
 Questo modulo molto semplice è una libreria android richiamata dai moduli mobile e wear e contenente un’unica classe DataSensor che implementa l’interfaccia Serializable, poichè le istanze di tale classe dovranno essere inviate dall’orologio al telefono. 
@@ -211,6 +218,7 @@ Tale classe, non scrive direttamente i dati sul file, ma li invia in broadcast a
 \vspace{2mm}
 Sempre in questo modulo, inoltre, viene fatta la registrazione dei sensori contenuti nel telefono, similmente a come viene fatta nel modulo wear. Per evitare ripetizioni del codice nella documentazione, è omessa anche questa parte.
 
+\clearpage
 
 % ----- CAPITOLO SUGLI ESPERIMENTI -----
 	\section{Esperimenti di registrazione}
@@ -227,15 +235,17 @@ L’esperimento svolto comprende le seguenti tre azioni:
 La ultime due azioni possono essere fatte in maniera sicura oppure dannosa per la schiena. \\
 Di seguito è riportato uno schema del modulo:\\
 
-\vspace{3mm}
+\vspace{6mm}
 \begin{minipage}{\linewidth}
 \begin{center}
 \includegraphics[width=59mm,scale=0.7]{./images/esperimento1.png} 
 \vspace{3mm}
 \captionof{figure}{Schema dei task dell'esperimento 1.\\}
+\label{fig:schema_esperimento}
+\vspace{10mm}
 \end{center}
 \end{minipage}
-Questo schema riassume un ciclo del percorso totale. L’esperimento completo prevederà 2 cicli, per un totale di 2 sollevamenti e due rilasci del carico\\ \\
+La figura \ref{fig:schema_esperimento} descrive un ciclo del percorso totale compiuto. L’esperimento completo prevederà 2 cicli, per un totale di 2 sollevamenti e due rilasci del carico\\ \\
 In generale gli esperimenti da svolgere, dovrebbero essere molteplici e dovrebbero prevedere una gamma molto più ampia di azioni, che un lavoratore potrebbe compiere: permanenza alla scrivania, utilizzo di dispositivi elettronici, utilizzo di attrezzatura da operaio. Inoltre dovrebbero essere effettuati in condizioni ambientali differenti, per poter realizzare un sistema il più universale possibile.
 
 \clearpage
@@ -260,7 +270,7 @@ Inoltre il comando può essere chiamato specificando alcune opzioni con la segue
 \clearpage
 
 % ---- GRAFICI BAROMETRO ------
-\subsection{Barometro smartwatch\\} 
+\subsection{Barometro smartphone} 
 \begin{minipage}{\linewidth}
 \begin{center}
 \includegraphics[width=160mm, height= 80mm]{./images/registrazione_tesi/pressure_phone.jpg} 
@@ -273,7 +283,7 @@ Inoltre il comando può essere chiamato specificando alcune opzioni con la segue
 \makebox[\linewidth]{}\makebox[\linewidth]{}\makebox[\linewidth]{}
 \makebox[\linewidth]{}\makebox[\linewidth]{}\makebox[\linewidth]{}
 
-\subsection{Barometro smatphone\\} 
+\subsection{Barometro smartwatch} 
 \makebox[\linewidth]{}
 \begin{minipage}{\linewidth}
 \begin{center}
@@ -408,6 +418,34 @@ Inoltre il comando può essere chiamato specificando alcune opzioni con la segue
 \end{minipage}
 
 \clearpage
+% ---- ANALISI FINESTRA -----
+\section{Analisi di una finestra temporale}
+La figura \ref{fig:finestra_abbassamento} mostra il grafico di una finestra dei segnali relativi ad un abbassamento, in cui il segnale posto per primo, che detta gli istanti da analizzare, è quello barometrico dello smartwatch, seguito dal segnale barometrico dello smartphone, accelerometrico lungo l'asse X dello smartwatch ed infine accelerometrico lungo l'asse Y dello smartphone.\\ \\
+\begin{minipage}{\linewidth}
+\begin{center}
+\vspace{1mm}
+\includegraphics[width=154mm, height= 65mm]{./images/finestra_abbassamento/pressure_watch.jpg} 
+\end{center}
+\end{minipage}
+\begin{minipage}{\linewidth}
+\begin{center}
+\includegraphics[width=154mm, height= 40mm]{./images/finestra_abbassamento/pressure_phone.jpg} 
+\end{center}
+\end{minipage}
+\begin{minipage}{\linewidth}
+\begin{center}
+\includegraphics[width=154mm, height= 40mm]{./images/finestra_abbassamento/accelerometr_watchX.jpg} 
+\end{center}
+\end{minipage}
+\begin{minipage}{\linewidth}
+\begin{center}
+\includegraphics[width=154mm, height= 40mm]{./images/finestra_abbassamento/accelerometr_phoneY.jpg}
+\captionof{figure}{Finestra relativa ad una abbasamento del barometro dello smartwatch, barometro dello smartphone, accelerometroX smartwatch e accelerometriY smartphone.\\} 
+\label{fig:finestra_abbassamento}
+\end{center}
+\end{minipage}
+\makebox[\linewidth]{}
+
 
 % ----- IL PROBLEMA DEGLI OUTLIER -----
 \section{Il problema degli outlier}
@@ -419,12 +457,13 @@ I valori anomali possono avere molte cause, essendo dovuti a improvvisi glitch d
 \vspace{7mm}
 \includegraphics[width=154mm, height= 80mm]{./images/registrazione_tesi/outliers.jpg} 
 \captionof{figure}{Grafico accelerometro asse X dello smartwatch.\\}
+\label{fig:outlier}
 \vspace{7mm}
 \end{center}
 \end{minipage}
 \makebox[\linewidth]{}
-Costruendo il grafico dei segnali, è evidente la presenza di questi valori inattesi dai picchi che compaiono lungo il segnale, tali sample non permettono una scala ragionevolmente visualizzabile, per cui è neccessaria una fase di signal preprocessing, nella quale vengono eliminati questi campioni fuoriscala. \\
-Essendo gli outlier un numero irrisorio (3 sample per il grafico in figura 15), possiamo procedere ad una pulizia manuale del segnale, cercando dal grafico generato da MATLAB, gli indici corrispondenti ai campioni presi in esame ed in seguito eliminarli.
+Costruendo il grafico dei segnali (figura \ref{fig:outlier}), è evidente la presenza di questi valori inattesi dai picchi che compaiono lungo il segnale, tali sample non permettono una scala ragionevolmente visualizzabile, per cui è neccessaria una fase di signal preprocessing, nella quale vengono eliminati questi campioni fuoriscala. \\
+Essendo gli outlier un numero irrisorio (3 sample per il grafico in figura \ref{fig:outlier}), possiamo procedere ad una pulizia manuale del segnale, cercando dal grafico generato da MATLAB, gli indici corrispondenti ai campioni presi in esame ed in seguito eliminarli.
 
 % ----- ANALISI SEGNALE BAROMETRICO -----
 \section{Il segnale barometrico per rilevare la manovra}
@@ -509,6 +548,7 @@ Questa procedura ha come inconveniente la generazione di codice ridondante, per 
 \subsection{Memorizzazione dei segnali e valutazione delle lunghezze dei buffer}
 Il secondo passo da compiere, per realizzare questo modulo, è lo storage dei campioni che descrivono un certo segnale. Non potendo mantere in memoria tutto il segnale registrato dal barometro, perchè potenzialmente infinito, è molto importante definire la quantità di campioni che possiamo memorizzare, per questioni legate principalmente alle risorse limitate dei dispositivi di cui ci siamo dotati. \\
 Per questa parte di modulo è necessario mantenere in memoria tre buffer, uno per il segnale grezzo \textit{noisy\_signal}, uno per il segnale a cui viene applicato il primo filtro \textit{movmean\_signal} e l'ultimo per il segnale pulito finale \textit{gaussian\_signal}. In particolare la scelta che è stata fatta è di 50 campioni per il primo segnale, poichè la frequenza di campionamento è di 50 Hz, e di 100 campioni per quanto riguarda i secondi due segnali, poichè dalla fase di analisi si può notare che il compimento di un abbassamento, corrisponde a circa 100 campioni del segnale barometrico dello smartwatch. Questi variabili costanti possono essere soggette a modifiche, in quanto valutate euristicamente, in particolare la dimensione dei secondi due buffer; dunque compiendo uno studio in futuro più dettagliato sulle modalità e i tempi, con cui può essere compiuto questo task, si possono modificare queste dimensioni, in modo da migliorare i risultati. \\
+\clearpage
 \input{./java_code/final_project_variables.tex} 
 \vspace{3mm}
 Inoltre per ognuno dei precedenti segnali, viene memorizzato un array della stessa dimensione, per i timestamp: stesso indice descrive valore e istante di tempo dello stesso campione: \textit{ArrayList<Long> noisy\_signal\_timestamp; ArrayList<Long> movmean\_signal\_timestamp; ArrayList<Long> gaussian\_signal\_timestamp;}
@@ -556,32 +596,6 @@ La semplicità di questa soluzione è il suo punto di forza, infatti non è rich
 A fronte di un investimento di piccola entità (il prezzo medio di uno smartwatch che include tutta la sensoristica necessaria è di circa 300 Euro, mentre di uno smartphone circa 400), è possibile ridurre il numero di infortuni dovuti a questo compito, riducendo di conseguenza anche il numero di giorni di assenza e favorendo condizioni di lavoro più sicure per i dipendenti, che si rispecchia anche in una maggiore produttività.
 
 \clearpage
-% ---- ANALISI FINESTRA -----
-\section{Analisi di una finestra temporale}
-Nella seguente immagine viene visualizzato il grafico di una finestra dei segnali relativi ad un abbassamento, in cui il segnale posto per primo, che detta gli istanti da analizzare, è quello barometrico dello smartwatch, seguito dal segnale barometrico dello smartphone, accelerometrico lungo l'asse X dello smartwatch ed infine accelerometrico lungo l'asse Y dello smartphone.\\ \\
-\begin{minipage}{\linewidth}
-\begin{center}
-\vspace{1mm}
-\includegraphics[width=154mm, height= 65mm]{./images/finestra_abbassamento/pressure_watch.jpg} 
-\end{center}
-\end{minipage}
-\begin{minipage}{\linewidth}
-\begin{center}
-\includegraphics[width=154mm, height= 40mm]{./images/finestra_abbassamento/pressure_phone.jpg} 
-\end{center}
-\end{minipage}
-\begin{minipage}{\linewidth}
-\begin{center}
-\includegraphics[width=154mm, height= 40mm]{./images/finestra_abbassamento/accelerometr_watchX.jpg} 
-\end{center}
-\end{minipage}
-\begin{minipage}{\linewidth}
-\begin{center}
-\includegraphics[width=154mm, height= 40mm]{./images/finestra_abbassamento/accelerometr_phoneY.jpg}
-\captionof{figure}{Finestra relativa ad una abbasamento del barometro dello smartwatch, barometro dello smartphone, accelerometroX smartwatch e accelerometriY smartphone.\\} 
-\end{center}
-\end{minipage}
-\makebox[\linewidth]{}
 
 
 
@@ -599,5 +613,8 @@ Nella seguente immagine viene visualizzato il grafico di una finestra dei segnal
 \end{itemize}
 
 \end{document}
+
+
+
 
 
